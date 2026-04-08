@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+
+<body>
+    
+    <script>
+
+
+        // 10. 網頁必須輸入通關密碼1234才會停止
+
+
+        // 方法A: 用 break; 離開迴圈
+        // while (true) {
+        //     var userInput = prompt("請輸入通關密碼");
+
+
+        //     if (userInput == '1234') {
+        //         break;
+        //     }
+        // }
+
+
+        // 方法B: 條件不成立，離開迴圈
+        // var flag = true;
+
+
+        // while (flag) {
+        //     var userInput = prompt("請輸入通關密碼");
+
+
+        //     if (userInput == '1234') {
+        //         flag = false;
+        //     }
+        // }
+
+
+
+
+        // 方法C: 條件不成立，離開迴圈
+        var userInput = '';
+
+
+        while (userInput != '1234') {
+            userInput = prompt("請輸入通關密碼");
+        }
+
+
+    </script>
+</body>
+ 
+</html>

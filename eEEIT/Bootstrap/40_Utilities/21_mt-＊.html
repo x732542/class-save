@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <style>
+        div>div{
+            width: 100px;
+            height: 100px;
+        }
+        .box{
+            background-color: lightcoral;
+
+            /* 20. 外層容器加入 padding */
+            /* padding: 10px; */
+            /* padding-top:10px; */
+            /* 21. 外層容器加入 border*/
+            border: 1px solid black;
+        
+        }  
+        .mydiv{
+            background-color: lightgreen;
+            /* display: inline-block; */
+            /* 22. 改變為  display: inline-block; */
+        }
+    </style>
+
+</head>
+
+<body>
+   
+    <!-- 10. 試試看，在 .box> div 加入 margin-top 樣式 -->
+    <!-- margin 崩塌 -->
+     <!-- 滿足下條件會發生崩塌
+     1.父層和子層都是bolck
+     2.第一子元素設定 margin-top 或最後一個子元素設定margin-bottom-->
+    <div class="box">
+        <!-- <div class="mydiv" style="margin-top:50px;">A</div> -->
+        <div class="mydiv" style="margin-bottom:50px;">A</div>
+    </div>
+    
+    <hr>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+
+<body>
+    
+    <h4>JavaScript Date Objects</h4>
+    <p><a href="https://www.w3schools.com/js/js_dates.asp">https://www.w3schools.com/js/js_dates.asp</a></p>
+    <h4>JavaScript Get Date Methods</h4>
+    <p><a href="https://www.w3schools.com/js/js_date_methods.asp">https://www.w3schools.com/js/js_date_methods.asp</a></p>
+    <hr>
+    <pre>
+    生成日期物件的方法：
+        new Date()
+        new Date(milliseconds)
+        new Date(dateString)
+        new Date(year, month, day, hours, minutes, seconds, milliseconds)
+    </pre>
+    
+    <script>
+        // 宣告一個時間物件
+        var d = new Date();
+        console.log(d);        
+
+
+        // 取得年份
+        console.log(d.getFullYear()); // 2026       
+
+
+        // 取得月份 (請注意這裡)
+        console.log(d.getMonth()); // 3
+        console.log(d.getMonth() + 1); // 4   
+
+
+        // 取得日期
+        console.log(d.getDate()); // 1        
+
+
+        // 取得星期 (請注意這裡)
+        // 星期日: 0
+        console.log(d.getDay()); // 3
+        
+        // 取得時間
+        console.log(d.getHours()); // 15
+        
+        // 取得分鐘
+        console.log(d.getMinutes()); // 16
+        
+
+
+        // 若日期物件生成後，我們需要加一天
+        // -> 取得明天的日期
+        // -> 明天 = 今天 + 1
+        // 日期物件.setDate()
+        d.setDate(d.getDate() + 1);
+        console.log(d);
+
+
+        // 若日期物件生成後，我們需要加一個月
+        // -> 取得下個月的日期
+        // -> 下個月 = 這個月 + 1
+        // 日期物件.setMonth()
+        d.setMonth(d.getMonth() + 1);
+        console.log(d);
+        
+        // console.clear();
+        // 小練習：如何透過日期的加減，取得這個月的最後一天?
+        // 這個月的最後一天 = 下個月的 1 號 - 1
+        //                 = 下個月的第0天
+
+
+        // 方法A: 日期物件.setMonth(月, 日)
+        var apple = new Date();
+        apple.setMonth(apple.getMonth() + 1, 0);
+        console.log(apple);        
+
+
+        // 方法B: new Date(年, 月, 日)
+        // var temp = new Date(2026, 4, 0);
+        // console.log(temp);
+        
+        var temp = new Date();
+        var bee = new Date(temp.getFullYear(), temp.getMonth() + 1, 0);
+        console.log(bee);        
+        console.log('anana');        
+
+
+
+
+        // console.clear();
+
+
+        // 小練習：宣告兩個日期物件，並指定日期後，進行日期相減
+        // millisecond = 86400000 = 1000*60*60*24
+        var a = new Date();
+        var b = new Date("2026-05-01");
+        console.log(a);
+        console.log(b);
+
+
+        var diff = b - a;
+        console.log(diff);
+        console.log(diff / 86400000);        
+        
+        
+
+
+    </script>
+
+
+</body>
+
+
+</html>

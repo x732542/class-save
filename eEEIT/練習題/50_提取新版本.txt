@@ -1,0 +1,27 @@
+目標 : 使用 git pull 指令提取 GitHub 上的新版本
+
+
+10. 請在 GitHub 開啟 Lab_B 數據庫頁面
+
+    11. 點擊左上「Switch branches/tags」選單，選取 main 分支
+
+    12. 點擊右上「Add file」選單，選擇「Create new file」按鈕 新增檔案
+    
+    13. 在上方「Name your file...」輸入框，輸入檔案名稱:「 apple.txt 」
+
+    14. 在下方編輯框輸入內容:「 皮卡丘 => 這是在 GitHub 頁面編輯的內容 」
+
+    15. 點選右上「Commit changes...」按鈕
+
+    16. 輸入提交訊息:「 新增apple及皮卡丘(GitHub) 」。
+        點選「Commit directly to the main branch」，點擊右下「Commit changes」提交
+
+
+20. 在 Visual Studio Code 開啟 Lab_B 資料夾
+
+    21. 輸入 git status 查看目前所在分支。
+        若不在 main 分支，輸入 git checkout main 切換
+
+    22. 輸入 git pull 指令，提取 GitHub 上的版本
+
+    23. 輸入 git log --oneline，查看版本紀錄

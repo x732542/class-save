@@ -1,0 +1,84 @@
+目標 : 建立新的分支 cat，在 cat 開發新功能並提交新的版本
+
+
+10. 建立分支
+
+    11. 在終端機輸入 git branch cat，建立 cat 分支
+
+    12. 輸入 git branch，查看 cat 分支是否建立成功，以及查看目前所在分支
+
+    13. 輸入 git checkout cat，切換到 cat 分支
+
+    14. 輸入 git status，查看目前所在分支
+
+
+20. 編輯檔案
+
+    21. 在 travel.html 網頁中間新增一個彈出視窗，如同「40_完成圖.png」
+
+    22. 請在 travel.html 第75行，加入以下內容並存檔
+        <!-- 新增彈出視窗 -->
+        <div id="tyModal">
+            <div class="tyModalContent">
+                <span class="tyClose">&times;</span>
+                <h1>好康報報</h1>
+                <p>優惠資訊</p>
+            </div>
+        </div>
+
+    23. 請在 css/style.css 最後一行，加入以下樣式並存檔
+        /* 新增彈出視窗的樣式 */
+        #tyModal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .tyModalContent {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .tyClose {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .tyClose:hover,
+        .tyClose:focus {
+            color: #000;
+            cursor: pointer;
+        }
+
+    24. 請在 js/myScript.js 最後一行，加入以下程式碼並存檔
+        // 新增彈出視窗的程式碼
+        var modalElem = document.getElementById("tyModal");
+        var spanElem = document.getElementsByClassName("tyClose")[0];
+
+        spanElem.onclick = function () {
+            modalElem.style.display = "none";
+        }
+
+        setTimeout(function () {
+            modalElem.style.display = "block";
+        }, 1000);
+    
+    
+30. 輸入「 git add . 」，將所有異動的檔案放到暫存區列管
+
+
+40. 提交檔案並查看版本紀錄。分別輸入以下指令:
+    git commit -m "新增彈出視窗"
+    git log --oneline

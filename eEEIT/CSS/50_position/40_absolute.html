@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/position.css">
+    <style>
+        /* 10. #greendiv 設定 position: absolute，
+               觀察 綠色及藍色 div 的位置變化 */
+        #greendiv {
+            position: absolute;
+            top: 50px;
+        }
+
+        /* 20. 改變 #greendiv 的 top、bottom、left、right 其中一個屬性，
+               觀察 綠色 div 的移動位置 */
+    </style>
+</head>
+
+<body>
+    <h3>position: absolute</h3>
+    <ol>
+        <li>查看上一層元素的 position 屬性值，若值 "不是" static，則以此元素的位置為基準來移動</li>
+        <li>若上一層元素的值為 static，則改查看 "更上一層" 元素的 position 屬性值</li>
+        <li>若找不到 " 非 static 的父層 "，則會找 body 元素，並以視窗為基準</li>
+    </ol>
+
+    <div class="demo">
+        <div id="reddiv">Red 200*200</div>
+        <div id="greendiv">Green 150*300；<br>position: absolute;</div>
+        <div id="bluediv">Blue</div>
+    </div>
+</body>
+
+</html>

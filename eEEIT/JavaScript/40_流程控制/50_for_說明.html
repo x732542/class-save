@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+
+<body>
+
+
+    <h4>JavaScript For Loop</h4>
+    <p><a href='https://www.w3schools.com/js/js_loop_for.asp'>https://www.w3schools.com/js/js_loop_for.asp</a></p>
+
+
+    <pre>
+
+
+        for (statement 1; statement 2; statement 3) {
+            // code block to be executed
+        }
+
+
+    </pre>
+
+
+    <script>
+
+
+        // 10. for 結構說明
+        // for (宣告變數並給初始值; 條件; 變數累進) {
+        //     條件成立，執行這裡的事情
+        // }
+
+
+        for (var i = 0; i < 2; i++) {
+            console.log(i);            
+        }
+
+
+        // 20. break 和 continue 關鍵字
+
+
+        console.clear();
+
+
+        // 不加 break 和 continue  ->  1 ~ 4
+        // 有 break  ->  1 ~ 2
+        // 有 break 和 continue  ->  1
+
+
+        for (var i = 1; i < 5; i++) {
+            
+            if (i % 2 == 0) { // i 是否可被 2 整除
+                continue;
+            }
+
+
+            if (i == 3) {
+                break;
+            }
+
+
+            console.log(i);            
+        }
+        
+
+
+        // 不知道迴圈要執行幾次  ->  while
+        // 知道迴圈要執行幾次|需要一個有規律在變化的數值 -> for
+
+
+    </script>
+</body> 
+
+
+</html>

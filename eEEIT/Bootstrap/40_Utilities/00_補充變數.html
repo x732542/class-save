@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    /* 選擇根元素(html元素) */
+    :root{
+        --myColor: lightgreen;
+        --y:var(--x);
+    }
+    h1{
+        background-color: var(--myColor);
+    }
+    h2{
+        --x:lightblue;
+        background-color:var(--x) ;
+    }
+    h3{
+        background-color:var(--y) ;
+    }
+</style>
+</head>
+<body>
+    <h1>123</h1>
+    <h2>123</h2>
+    <h3>123</h3>
+</body>
+</html>

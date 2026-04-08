@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+    <style>
+        div {
+            border: 3px solid black;
+        }
+
+        tr,
+        td {
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-4">A</div>
+        <div class="col-4">B</div>
+        <div class="col-4">
+            <div class="row">C</div>
+            <div class="row">D</div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-3">
+            <div class="row">A</div>
+            <div class="row">B</div>
+        </div>
+        <div class="col-3">
+            <div class="row">C</div>
+            <div class="row">D</div>
+        </div>
+        <div class="col-3">
+            <div class="row">E</div>
+            <div class="row">F</div>
+        </div>
+        <div class="col-3" style="background-color: aquamarine;">G</div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-9">
+            <div class="row">
+                <div class="col-4">A</div>
+                <div class="col-4">B</div>
+                <div class="col-4">C</div>
+                <div class="col-4">D</div>
+                <div class="col-4">E</div>
+                <div class="col-4">F</div>
+            </div>
+        </div>
+        <div class="col-3">G</div>
+    </div>
+
+    <br>
+    <table class="col-12">
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td rowspan="2">d</td>
+        </tr>
+        <tr>
+            <td>e</td>
+            <td>f</td>
+            <td>g</td>
+        </tr>
+    </table>
+</body>
+
+</html>

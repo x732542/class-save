@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* 10. 改變滑鼠經過單選按鈕的樣式 */
+        input[type="radio"] {
+            cursor: pointer;
+        }
+
+        /* 20. :valid 驗證通過時的樣式設定 */
+        input:valid[type="email"],
+        input:valid[type="text"] {
+            background-color: aqua;
+            color: salmon;
+        }
+        
+        /* 21. :invalid 驗證不通過時的樣式設定 */
+        input:invalid[type="email"],
+        input:invalid[type="text"] {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p><a href="https://www.w3schools.com/cssref/trysel.asp" target="_blank">Try CSS Selector</a></p>
+    <p><a href="https://flukeout.github.io/" target="_blank">CSS Diner (選擇器的小遊戲)</a></p>
+    <p><a href="https://caniuse.com/" target="_blank">Can I use..</a></p>
+    <hr>
+    <form>
+        <!-- 照上方CSS設定 -->
+        <!-- 10. 產生 單選按鈕元素 -->
+        <input type="radio">
+        <br><br>
+        <!-- 20. 產生 email 輸入框 以及 -->
+        email:<input type="email">
+        <br>
+        <br>
+
+        <!--     產生 文字輸入框，並限制輸入身分證字號格式 -->
+        ID:<input type="text" pattern="[A-Z]{1}[0-9]{9}" required>
+
+    </form>
+</body>
+
+</html>

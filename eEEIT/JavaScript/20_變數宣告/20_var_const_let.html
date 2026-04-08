@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <h3>JavaScript Versions：<a
+            href="https://www.w3schools.com/js/js_versions.asp">https://www.w3schools.com/js/js_versions.asp</a></h3>
+
+    <script>
+        // 10. var、let、const 宣告變數的方法
+        var x = 10;
+        let y = 20;
+        const z = 30;
+
+
+        console.log(x); // 10
+        console.log(y); // 20
+        console.log(z); // 30
+
+
+
+
+        // 20. const 變數宣告並給值後是否還能修改? (X)
+        // z = 99; // 錯誤: Assignment to constant variable.
+        // console.log(z);
+
+
+        // const z2;
+        // z2 = 50;
+
+
+        // const 宣告的變數:
+        // 1. 宣告當下要給值
+        // 2. 給的值不能修改
+
+
+        // 30. 在 if 流程控制中
+        //     透過 var、let 宣告兩個變數，並觀察他們的作用域
+
+
+        // if 判斷式的結構:
+        // if (條件|比較) { 條件成立時，執行這裡的事情 }
+
+
+        // 情境: 如果降雨機率大於60%，則帶傘出門
+        // if (降雨機率是否大於60%) { 帶傘出門 }
+
+
+        // 2 > 1  ->  比較2是否大於1
+        console.log(2 > 1); // true
+
+
+        if (2 > 1) {
+            // console.log("ok");
+
+
+            var cat = 100;
+            console.log(cat); // 100  
+
+            // let dog = 200;
+            // console.log(dog); // 200          
+        }
+        console.log(cat); // 100
+        // console.log(dog); // 錯誤: dog is not defined
+
+        // 實驗: 宣告相同變數名稱
+        var apple = 1;
+        var apple = 2;
+        console.log(apple);
+
+        let bee = 3;
+        // let bee = 4;
+        console.log(bee);
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

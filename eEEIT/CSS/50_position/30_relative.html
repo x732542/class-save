@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/position.css">
+    <style>
+        /* 10. #greendiv 設定 position: relative，
+               觀察 綠色及藍色 div 的位置變化 */
+        #greendiv{
+            position: relative;
+            top: 50px;
+        }
+        /* 20. 改變 #greendiv 的 top、bottom、left、right 其中一個屬性，
+               觀察 綠色 div 的移動位置 */
+        
+    </style>
+</head>
+
+<body>
+    <h3>position: relative</h3>
+    <ol>
+        <li>relative 相對，相對於原本的位置。換言之，以元素原本的位置為基準來移動</li>
+        <li>屬性值為 relative 的情況下，若沒有設定 top、bottom、left、right 屬性，呈現結果會和 position: static 一樣</li>
+    </ol>    
+
+    <div class="demo">
+        <div id="reddiv">Red 200*200</div>
+        <div id="greendiv">Green 150*300；<br>position: relative;</div>
+        <div id="bluediv">Blue 300*700</div>
+    </div>
+</body>
+
+</html>

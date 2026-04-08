@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        .fit {
+            /* 試試看將寬度設定為400px; 高度設定為100px; */
+            width: 400px;
+            height: 100px;
+            border: 10px black solid;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="fit" src="../img/sunny.jpg">
+    <h2>fill</h2>
+    <img class="fit" style="object-fit: fill;" src="../img/sunny.jpg">
+    <h2>cover</h2>
+    <img class="fit" style="object-fit: cover;" src="../img/sunny.jpg">
+    <h2>contain</h2>
+    <img class="fit" style="object-fit:contain;" src="../img/sunny.jpg">
+    <h2>none</h2>
+    <img class="fit" style="object-fit:none;" src="../img/sunny.jpg">
+
+    <!-- 試試object-fit -->
+
+</body>
+
+</html>

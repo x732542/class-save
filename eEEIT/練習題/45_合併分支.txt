@@ -1,0 +1,21 @@
+目標 : 將 cat 分支合併回 main 分支
+
+
+10. 切換分支
+
+    11. 在終端機輸入 git checkout main，切換回 main 分支
+
+    12. 輸入 git status，查看目前所在分支
+
+
+20. 合併分支
+
+    21. 輸入 git merge cat
+
+    22. 輸入 git log --oneline，查看版本紀錄
+
+
+30. 輸入 git push，推送到 GitHub 數據庫
+
+
+40. 在 GitHub 頁面查看數據庫變化

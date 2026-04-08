@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <style>
+        div[class*="rounded"] {
+            width: 150px;
+            height: 50px;
+            background-color: lightskyblue;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        span {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            background-color: blanchedalmond;
+        }
+        span:hover{background-color: pink;}
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h4>官方網站</h4>
+        <p><a
+                href="https://getbootstrap.com/docs/5.3/utilities/borders/">https://getbootstrap.com/docs/5.3/utilities/borders/</a>
+        </p>
+        <hr>
+
+        <!-- 10. 為什麼這樣設定div不會出現? -->
+        <div class="w-25 h-100 bg-success"></div>
+        <div style="width: 50px; height: 50px; background-color: aqua;"></div>
+        <!-- 20. 複製貼上官網的範例，為什麼 border 測試不出來 -->
+        <span class="border">
+        </span>
+        <span class="border-top">
+        </span>
+        <span class="border-end">
+        </span>
+        <span class="border-bottom">
+        </span>
+        <span class="border-start">
+        </span>
+        <!-- 21. 設定不同的邊線顏色 -->
+        <hr>
+        <span class="border border-primary"></span>
+        <!-- 23. 調整 border 的寬度： border-N -->
+        <span class="border border-1"></span>
+        <span class="border border-2"></span>
+        <span class="border border-3"></span>
+        <span class="border border-4"></span>
+        <span class="border border-5"></span>
+        <hr>
+        <!-- 25. 設定邊框圓角 -->
+        <!--     .rounded-top    | .rounded-bottom  -->
+        <!--     .rounded-start  | .rounded-end     -->
+        <!--     .rounded-circle | .rounded-pill   -->
+        <div class="rounded"></div>
+        <div class="rounded-top"></div>
+        <div class="rounded-bottom"></div>
+        <div class="rounded-start"></div>
+        <div class="rounded-end"></div>
+        <div class="rounded-circle"></div>
+        <div class="rounded-pill"></div>
+    </div>
+
+</body>
+
+</html>

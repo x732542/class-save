@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+    <!-- Grid system 網格系統 -->
+
+    <h4>Bootstrap Grids</h4>
+    <p><a
+            href="https://www.w3schools.com/bootstrap5/bootstrap_grid_basic.php">https://www.w3schools.com/bootstrap5/bootstrap_grid_basic.php</a>
+    </p>
+    <h4>Bootstrap Grid Examples</h4>
+    <p><a
+            href="https://www.w3schools.com/bootstrap5/bootstrap_grid_examples.php">https://www.w3schools.com/bootstrap5/bootstrap_grid_examples.php</a>
+    </p>
+    <h4>Grid options</h4>
+    <p><a
+            href="https://getbootstrap.com/docs/5.3/layout/grid/#grid-options">https://getbootstrap.com/docs/5.3/layout/grid/#grid-options</a>
+    </p>
+
+    <h4>Row columns</h4>
+    <p><a
+            href="https://getbootstrap.com/docs/5.3/layout/grid/#row-columns">https://getbootstrap.com/docs/5.3/layout/grid/#row-columns</a>
+    </p>
+    <h4>Nesting</h4>
+    <p><a
+            href="https://getbootstrap.com/docs/5.3/layout/grid/#nesting">https://getbootstrap.com/docs/5.3/layout/grid/#nesting</a>
+    </p>
+    <hr>
+
+    <div class="row">
+        <div class="col">.co1</div>
+        <div class="col">.co2</div>
+        <div class="col">.co3</div>
+        <div class="col">.co1</div>
+        <div class="col">.co2</div>
+        <div class="col">.co3</div>
+        <div class="col">.co1</div>
+        <div class="col">.co2</div>
+        <div class="col">.co3</div>
+        <div class="col">.co1</div>
+        <div class="col">.co2</div>
+        <div class="col">.co3</div>
+        <div class="col">.co13</div>
+    </div>
+    <br>
+    <h3>.col-{數字}</h3>
+    <div class="row">
+        <div class="col-4">.co1</div>
+        <div class="col-4">.co2</div>
+        <div class="col-4">.co3</div>
+        <div class="col-4">.co3</div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-5">.co1</div>
+        <div class="col-8">.co2</div>
+    </div>
+    <br>
+    <!-- 10. 請試著透過 col-* 或者 row-cols-* 的設定，將畫面平分成四欄 -->
+    <h3>.col-{數字}</h3>
+    <div class="row">
+        <div class="col-md-3">.co1</div>
+        <div class="col-md-3">.co2</div>
+        <div class="col-md-3">.co3</div>
+        <div class="col-md-3">.co4</div>
+    </div>
+    <br>
+    <!-- col-{斷點}-{數字} -->
+    <!-- cod-md-3
+    md -> 畫面寬度>=768px
+    col-3 ->元素分配3等分
+    col-md-3 ->當畫面寬度>=768px,元素分成3等分 -->
+    <!-- 20. 請試著透過 col-斷點-* 設定當畫面寬度 ≥768px 時，將畫面平分成兩欄 -->
+
+    <h3> 20. 請試著透過 col-斷點-* 設定當畫面寬度 ≥768px 時，將畫面平分成兩欄</h3>
+
+    <div class="row">
+        <div class="col-md-6">.co1</div>
+        <div class="col-md-6">.co2</div>
+        <div class="col-md-6">.co3</div>
+        <div class="col-md-6">.co4</div>
+    </div>
+    <br>
+
+    <!-- 21. 請試著透過 col-斷點-* 設定當畫面寬度 ≥992px 時，將畫面平分成四欄 -->
+    <h3> 21. 請試著透過 col-斷點-* 設定當畫面寬度 ≥992px 時，將畫面平分成四欄</h3>
+    <div class="row">
+        <div class="col-lg-3">.co1</div>
+        <div class="col-lg-3">.co2</div>
+        <div class="col-lg-3">.co3</div>
+        <div class="col-lg-3">.co4</div>
+    </div>
+    <h3>22.結合上述的兩個練習
+        設定當畫面寬度 ≥768px 時，將畫面平分成兩欄
+        設定當畫面寬度 ≥992px 時，將畫面平分成四欄</h3>
+    <br>
+    <div class="row">
+        <div class="col-md-6 col-lg-3">.co1</div>
+        <div class="col-md-6 col-lg-3">.co2</div>
+        <div class="col-md-6 col-lg-3">.co3</div>
+        <div class="col-md-6 col-lg-3">.co4</div>
+    </div>
+    <br>
+    <h3>.row-cols-{數字1~6}</h3>
+    <div class="row row-cols-2">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+    </div>
+
+    <!-- 30. 觀察現有的網頁，進行巢狀堆疊Grid的練習 -->
+    <div class="row">
+        <div class="col-3">111</div>
+        <div class="col-9">
+            <div class="row">
+                <div class="col-6">111</div>
+                <div class="row">
+                    <div class="col-8">111</div>
+                    <div class="col-4">1111</div>
+                </div>
+                <div class="col-6">111</div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <h1>練習1</h1>
+    <div class="row">
+        <div class="col-4">A</div>
+        <div class="col-4">B</div>
+        <div class="col-4">
+            <div class="row">C</div>
+            <div class="row">D</div>
+        </div>
+    </div>
+    <h1>香蕉</h1>
+</body>
+
+</html>

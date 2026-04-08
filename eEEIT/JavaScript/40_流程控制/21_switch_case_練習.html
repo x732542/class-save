@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <!-- 10. 請設計一個介面，讓使用者輸入頻道代碼後，網頁可以顯示對應的頻道名稱 -->
+    請輸入頻道代碼 :
+    <input type="text" id="userInput">
+    <button onclick="showTV()">查詢</button>
+    <p>目前只有 20、65、66 這三台可以查詢</p>
+    <p id="msg"></p>
+
+
+    <script>
+        // 20. 透過 switch case 設定底下對應項目
+        //     20 ==> TLC 旅遊生活頻道
+        //     65 ==> HBO
+        //     66 ==> 東森洋片台
+        //     非上述 ==> 頻道尚未建立
+        function showTV() {
+            var inputElem = document.getElementById('userInput');
+            console.log(inputElem); // <input type="text" id="userInput">
+
+            var channelCode = inputElem.value;
+            console.log(channelCode);
+            console.log(typeof channelCode); // string       
+
+            var temp;
+            switch (channelCode) {
+                case '20':
+                    temp = ('TLC 旅遊生活頻道');
+                    break;
+                case '65':
+                    temp = ('HBO');
+                    break;
+                case '66':
+                    temp = ('東森洋片台');
+                    break;
+                default:
+                    temp = ('頻道尚未建立');
+            }
+            document.getElementById('msg').innerText =temp;
+        }
+
+        //     20 ==> TLC 旅遊生活頻道
+        //     65 ==> HBO
+        //     66 ==> 東森洋片台
+        //     非上述 ==> 頻道尚未建立
+    </script>
+</body>
+
+</html>

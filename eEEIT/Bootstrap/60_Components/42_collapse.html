@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.collapse</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h4>官方網站</h4>
+        <p><a
+                href="https://getbootstrap.com/docs/5.3/components/collapse/#example">https://getbootstrap.com/docs/5.3/components/collapse/#example</a>
+        </p>
+        <h4>Bootstrap Collapse</h4>
+        <p><a
+                href="https://www.w3schools.com/bootstrap5/bootstrap_collapse.php">https://www.w3schools.com/bootstrap5/bootstrap_collapse.php</a>
+        </p>
+        <hr>
+
+        <!-- 10. 加入一個 <div> 標籤，並添加類別 .collapse，
+                 id 設定為 demo  -->
+        <div id="demo" class="collapse">banana</div>
+
+        <!-- 20. 加入一個按鈕 -->
+        <!--    a. 套用按鈕的相關樣式 -->
+        <!--    b. 增加屬性 data-bs-toggle="collapse"-->
+        <!--    c. 增加屬性 data-bs-target="#demo" -->
+        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">
+            button</button>
+        <!-- 25. 加入一個超連結 -->
+        <!--    a. 套用按鈕的相關樣式 -->
+        <!--    b. 超連結的 href 指向 #demo -->
+        <!--    c. 增加屬性 data-bs-toggle="collapse" -->
+            <a href="#demo" data-bs-toggle="collapse">123</a>
+    </div>
+
+</body>
+
+</html>

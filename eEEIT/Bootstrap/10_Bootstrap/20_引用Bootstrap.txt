@@ -1,0 +1,23 @@
+10. 建立 2 個 html 檔案
+    用不同的方式引用 bootstrap 需要的檔案
+
+    11. 透過CDN方式引用
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+
+    12. 透過本地檔案方式引用
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+
+20. 取得 Popovers 的範例程式碼
+    網址：https://getbootstrap.com/docs/5.3/components/popovers/
+
+    21. 閱讀官方範例
+        https://getbootstrap.com/docs/5.3/components/popovers/#examples
+
+    22.	複製 Live demo 範例程式碼
+        並貼到 10 步驟產生出來的 2 個 html 檔案 中
+
+    23. 確認網頁是否可以正常執行？

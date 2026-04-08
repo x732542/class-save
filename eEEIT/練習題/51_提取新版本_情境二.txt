@@ -1,0 +1,43 @@
+目標 : 在 GitHub 及 本機皆有新版本的情況下使用 git pull 指令
+
+
+10. 請在 GitHub 開啟 Lab_B 數據庫頁面
+
+    11. 點擊左上「Switch branches/tags」選單，選取 main 分支
+
+    12. 點擊 apple.txt，點擊編輯框右上「Edit this file」(筆的圖示)
+    
+    13. 在下方編輯框新增內容:「 伊布 => 這是在 GitHub 頁面編輯的內容 」
+
+    14. 點選右上「Commit changes...」按鈕
+
+    15. 輸入提交訊息:「 編輯apple及新增伊布(GitHub) 」，
+        點選「Commit directly to the main branch」，點擊右下「Commit changes」提交
+
+
+20. 在 Visual Studio Code 開啟 Lab_B 資料夾
+
+    21. 輸入 git status 查看目前所在分支。
+        若不在 main 分支，輸入 git checkout main 切換
+
+    22. 新增檔案 bee.txt，輸入內容:「 小火龍 => 這裡是在 VS Code 編輯的內容 」
+
+    23. 輸入 git add bee.txt ，將檔案放到暫存區列管
+
+    24. 提交檔案並查看版本紀錄。分別輸入以下指令:
+        git commit -m "新增bee及小火龍"
+        git log --oneline
+
+    25. 輸入 git push，推送到 GitHub 數據庫
+
+    26. 推送失敗，請輸入 git pull 指令，先提取 GitHub 上的版本 (!!請注意此步驟!!)
+
+    27. 終端機顯示 vim文字編輯器 畫面
+        (a). 按「i」進入編輯模式
+        (b). 刪除預設的提交訊息(第一行文字)，輸入訊息:「 合併GitHub及本機版本 」
+        (c). 按「ESC鍵」退出編輯模式
+        (d). 輸入「:wq」後，按「Enter」執行，即可存檔離開
+
+    28. 輸入 git log --oneline，查看版本紀錄
+
+    29. 再次輸入 git push，並在 GitHub 頁面查看數據庫變化

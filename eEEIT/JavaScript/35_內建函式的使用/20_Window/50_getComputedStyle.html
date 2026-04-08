@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <!-- 10. 畫面上設定一張圖片 -->
+    <img src="/img/like.png" id="apple">
+    <!-- <img src="/img/like.png" id="apple" style="top: 50px;"> -->
+    <script>
+
+        // 20. 透過 元素.style.top 取得 樣式 top 值
+        var elem = document.getElementById("apple");
+        console.log(elem);
+
+        var temp1 = elem.style.top;
+        console.log(temp1);
+
+
+        // 30. 透過 window.getComputedStyle(元素).getPropertyValue(樣式屬性);
+        var temp2 =  window.getComputedStyle(elem).getPropertyValue("top");
+        var temp2 =  window.getComputedStyle().getPropertyValue();
+        console.log(temp2);
+        
+        // 40. 觀察上述兩者差異
+
+    </script>
+</body>
+
+</html>

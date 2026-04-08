@@ -1,0 +1,66 @@
+body {
+    background-color: palevioletred;
+}
+
+a {
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.section3 {
+    width: 100vw;
+    height: 50vh;
+    background-image: url("./test/martin-wettstein-fgG7Bg0w4NI-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.mask {
+    background-image: rgba(255, 255, 255, 0.6);
+    /* 白色透明度60% */
+    width: 100vw;
+    height: 50vh;
+}
+
+.text {
+    background-image: url("https://images.unsplash.com/photo-1507646871303-331b8f659227");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-size: 300px;
+    line-height: 50vh;
+    text-align: center;
+    color: transparent;
+    /* 文字顏色設定透明 */
+    -webkit-background-clip: text;
+    /* 背景裁剪成文字的前景色 */
+    background-clip: text;
+}
+
+.navBar {
+    list-style-type: none;
+    text-align: right;
+}
+
+.navBar li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.navBar li:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.navBar li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}

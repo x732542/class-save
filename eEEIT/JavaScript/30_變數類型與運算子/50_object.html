@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <h4>JavaScript Objects</h4>
+    <p><a
+            href="https://www.w3schools.com/js/js_object_definition.asp">https://www.w3schools.com/js/js_object_definition.asp</a>
+    </p>
+
+    <script>
+        // var apple = ""; // apple 是字串
+        // var apple = []; // apple 是陣列
+        var apple = {}; // apple 是物件
+        console.log(apple); // {}
+
+
+
+
+        // 10. 使用 {} 建立 object；object 可以包含屬性和方法
+        //     { key1:value1, key2:value2.. }
+        var apple = { bee: "cat" };
+        // apple是一個物件
+        // 物件裡面有一個 bee 屬性
+        // bee 屬性的值是字串 cat
+
+
+        // 情境: 要記錄學生的姓名、國文成績、數學成績
+
+
+        // 思考: 使用變數
+        // var student = "皮卡丘";
+        // var chinese = 80;
+        // var math = 90;
+
+
+        // 思考: 使用陣列
+        // var student = ["皮卡丘", 80, 100, 90];
+        // console.log(student[2]); // 90 -> 100       
+
+
+        // 思考: 使用物件
+        var student = {
+            name: "皮卡丘",
+            chinese: 80,
+            math: 90
+        };
+        console.log(student); // {name: '皮卡丘', chinese: 80, math: 90}
+
+        // 甚麼時候要用物件
+        // 需要很多變數紀錄資料，且這接資料都在描述同一事物時
+
+        console.clear();
+        
+        // 20. 透過 .  可以 取得 | 新增 object 的屬性
+        //取得屬性: 物件.屬性
+        console.log(student.math);//90
+        
+        //修改屬性值: 物件.屬性 = 新的值
+        student.math = 100;
+        console.log(student); //100
+        
+        //新增屬性值: 物件.屬性 = 值
+        student.english = 70;
+        console.log(student); //10
+        var a = student
+        a.chinese = 99;
+        console.log(a);
+        console.log(student);
+        a.chinese = 80;
+
+        // 30. 透過 [] 可以 取得 | 新增 object 的屬性
+        // 取得屬性值: 物件["屬性"]
+        console.log(student['chinese']);
+        // 修改屬性值: 物件["屬性"] = 新的值
+        console.log(student['chinese'] = 95);
+        
+        // 新增屬性值: 物件["屬性"] = 值
+        console.log(student['science'] = 86);
+        console.log(student);
+        
+        var b = {student}
+        console.log(b);
+        
+    </script>
+
+
+</body>
+
+</html>

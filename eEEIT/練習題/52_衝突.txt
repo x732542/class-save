@@ -1,0 +1,46 @@
+目標 : 解決 git pull 之後的衝突
+
+
+10. 請在 GitHub 開啟 Lab_B 數據庫頁面
+
+    11. 點擊左上「Switch branches/tags」選單，選取 main 分支
+
+    12. 點擊 apple.txt，點擊編輯框右上「Edit this file」(筆的圖示)
+    
+    13. 在下方編輯框新增內容:「 妙蛙種子 => 這是在 GitHub 頁面編輯的內容 」
+
+    14. 點選右上「Commit changes...」按鈕
+
+    15. 輸入提交訊息:「 編輯apple及新增妙蛙種子(GitHub) 」，
+        點選「Commit directly to the main branch」，點擊右下「Commit changes」提交
+
+
+20. 在 Visual Studio Code 開啟 Lab_B 資料夾
+
+    21. 輸入 git status 查看目前所在分支。
+        若不在 main 分支，輸入 git checkout main 切換
+
+    22. 在 apple.txt 新增內容:「 胖丁 => 這裡是在 VS Code 編輯的內容 」
+
+    23. 將檔案放到暫存區列管，以及提交檔案並查看版本紀錄。分別輸入以下指令:
+        git add apple.txt
+        git commit -m "編輯apple及新增胖丁"
+        git log --oneline
+
+    24. 輸入 git push，推送到 GitHub 數據庫
+
+    25. 推送失敗，請輸入 git pull 指令，提取 GitHub 上的版本
+
+    26. 出現衝突，在 apple.txt 編輯畫面的右下 點擊「在合併編輯器中解析」
+
+    27. 手動解決衝突:
+        (a). 左上視窗點擊「接受 傳入」
+        (b). 右上視窗點擊「接受 目前」
+        (c). 點擊右下「完成合併」
+    
+    28. 查看狀態，以及提交合併結果並查看版本紀錄。分別輸入以下指令: 
+        git status
+        git commit -m "解決衝突後的版本"
+        git log --oneline
+    
+    29. 輸入 git push，推送到 GitHub 數據庫，並在 GitHub 頁面查看數據庫變化

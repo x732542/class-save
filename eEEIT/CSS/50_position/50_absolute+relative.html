@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/position.css">
+    <style>
+        /* 10. 在 #greendiv 加上 position: absolute; 以及 top: 50px; */
+        #greendiv{
+            position: absolute;
+            top:50px;
+        }
+        /* 20. 在 .demo 加上 position: relative; 觀察畫面變化 */
+        .demo{
+            position: relative;
+        }  
+    </style>
+</head>
+<body>
+    <h3>position: absolute</h3>
+    <p>.demo 為 position: relative (非 static)，因此以 .demo 元素的位置為基準</p>
+    <div class="demo">
+        <div id="reddiv">Red 200*200</div>
+        <div id="greendiv">Green 150*300；<br> position: absolute;<br> top: 50px;</div>
+        <div id="bluediv">Blue</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <h4>JavaScript String Methods</h4>
+    <p><a href="http://www.w3schools.com/js/js_string_methods.asp">http://www.w3schools.com/js/js_string_methods.asp</a>
+    </p>
+    <h4>JavaScript String Reference</h4>
+    <p><a
+            href="https://www.w3schools.com/jsref/jsref_obj_string.asp">https://www.w3schools.com/jsref/jsref_obj_string.asp</a>
+    </p>
+
+    <script>
+        var test = "APPLE";
+
+        // 1. 字串的長度
+        // 字串length
+        var temp = test.length;
+        console.log(temp);// 5
+        console.log(test.length);
+
+        // 2. 字串.indexOf() 
+        // 可以幫助我們做什麼事情? 呼叫後回傳了什麼?
+        var temp2 = test.indexOf("P,2");
+        console.log(temp2);
+        console.log(test.indexOf('a'));
+        // 3. 字串.lastIndexOf() 
+        // 可以幫助我們做什麼事情? 呼叫後回傳了什麼?
+        var temp3 = test.lastIndexOf("P");
+        console.log(temp3);
+        console.log(test.lastIndexOf("P"));
+        // 4. 字串.split() 幫助我們把字串分割為陣列
+        var fruits = "apple,bubble,lemon";
+        console.log(fruits);
+        var temp4 = fruits.split(",");
+        console.log(temp4);
+
+        // 5. 希望把字串補零到指定長度的話，該如何處理?
+        //    目標 : 原始字串13756，希望產出00013756
+        var demo = "13756";
+        var a = demo.padStart(3, '0')
+        console.log(a);
+
+        // console.log("000"+demo);
+        // 6. 擷取字串
+        // 0911222333 是 手機
+        // 0423456789 是 電話號碼
+        var phones = "09112223330423456789";
+        var cellphone = phones.substring(0, 10);
+        console.log(cellphone); // 0911222333
+        var telephone = phones.substring(10);
+        console.log(telephone); // 0423456789
+
+        console.clear();
+        
+        // 7. 比較 substring()、slice()
+        var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        // console.group("(0, 2)");
+        // console.log(`str.substring(0,2)：${str.substring(0, 2)}`);
+        // console.log(`str.slice(0,2)：${str.slice(0, 2)}`);
+        // console.groupEnd();
+
+        // console.group("(3, 5)");
+        // console.log(`str.substring(3,5)：${str.substring(3, 5)}`);
+        // console.log(`str.slice(3,5)： ${str.slice(3, 5)}`);
+        // console.groupEnd();
+
+        // console.group("(5, 3)");
+        // console.log(`str.substring(5,3)：${str.substring(5, 3)}`);
+        // console.log(`str.slice(5,3)：${str.slice(5, 3)}`);
+        // console.groupEnd();
+
+        // console.group("(3)");
+        // console.log(`str.substring(3)：${str.substring(3)}`);
+        // console.log(`str.slice(3)： ${str.slice(3)}`);
+        // console.groupEnd();
+
+        // console.group("(-5)");
+        // console.log(`str.substring(-5)：${str.substring(-5)}`);
+        // console.log(`str.slice(-5)：${str.slice(-5)}`);
+        // console.groupEnd();
+
+    </script>
+</body>
+
+</html>

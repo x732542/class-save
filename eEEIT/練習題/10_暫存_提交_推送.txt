@@ -1,0 +1,56 @@
+目標 : 練習「編輯檔案 → 追蹤檔案 → 提交新版本 → 推送到GitHub」的流程 
+
+
+10. 觀察工作目錄目前的狀態
+
+    11. 使用 Visual Studio Code 開啟 Lab_A 資料夾
+
+    12. 點選 Visual Studio Code 上方功能表列 → 終端機 → 新增終端
+    
+    13. 在終端機輸入 git status 指令，觀察訊息
+
+
+20. 新增檔案
+
+    21. 新增 pokemon.html，輸入以下內容並存檔
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Pokemon</title>
+        </head>
+        <body>
+            <h1>皮卡丘</h1>
+        </body>
+        </html>
+
+    22. 在終端機輸入 git status 指令，觀察訊息
+
+
+30. 將檔案放到暫存區列管|追蹤。以下步驟請在終端機操作
+
+    31. 輸入 git add pokemon.html
+
+    32. 輸入 git status 指令，觀察訊息
+
+
+40. 提交檔案。以下步驟請在終端機操作
+
+    41. 輸入 git commit -m "新增皮卡丘"
+
+    42. 輸入 git log，查看版本紀錄
+            git log --oneline
+
+50. 推送到 GitHub 數據庫。步驟 52~54 請在終端機操作
+
+    51. 請至 GitHub 頁面確認已登入帳號
+
+    52. 輸入 git remote -v，查詢 origin 指向的   GitHub 數據庫位址
+
+    53. 輸入 git push origin main，
+        若出現「Connect to GitHub」視窗，點擊「Sign in with your browser」
+
+    54. 輸入 git log --oneline，觀察訊息
+
+    55. 在 GitHub 頁面查看數據庫變化

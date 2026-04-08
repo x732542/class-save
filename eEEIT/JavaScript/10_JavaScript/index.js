@@ -1,0 +1,1 @@
+document.write("<h2>小火龍</h2>");

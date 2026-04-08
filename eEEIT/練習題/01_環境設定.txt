@@ -1,0 +1,31 @@
+目標 : 檢查 Windows 認證，以及設定本機使用者資訊
+
+
+10. 檢查 Windows 認證 (Windows作業系統才需操作)
+
+    請至「控制台 → 使用者帳戶 → 認證管理員 → Windows 認證 → 一般認證」，
+    檢查是否已經有 git 或 github 字樣的認證 (例如: git:https://github.com)，
+    如果有，但使用者名稱不是自己的 GitHub 帳號，請先移除。
+    
+
+20. 設定本機使用者資訊。以下步驟請在「命令提示字元 | 終端機」輸入指令
+
+    21. 請確認已安裝 Git，並查看版本。輸入指令: git version 
+
+    22. 查看是否已經有使用者資訊，分別輸入以下指令:
+        git config --global user.name
+        git config --global user.email
+
+    23. 如有顯示資訊，請確認是否為自己的 GitHub 帳號資訊。
+        如果不是，分別輸入以下指令移除:
+        git config --global --unset user.name
+        git config --global --unset user.email
+
+    24. 設定與 GitHub 帳號相同的使用者資訊，分別輸入以下指令: 
+        git config --global user.name "你的名稱"
+        git config --global user.email "你的信箱"
+
+
+【補充】清除畫面
+命令提示字元 | PowerShell : 使用 cls   指令
+mac 的終端機 | PowerShell : 使用 clear 指令

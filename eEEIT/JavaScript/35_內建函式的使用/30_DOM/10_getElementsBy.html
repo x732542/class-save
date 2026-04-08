@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+
+<body>
+
+
+    <h4>JavaScript HTML DOM Elements</h4>
+    <p><a
+            href="https://www.w3schools.com/js/js_htmldom_elements.asp">https://www.w3schools.com/js/js_htmldom_elements.asp</a>
+    </p>
+
+
+    <hr>
+
+
+    <h2 id="myApple">Apple</h2>
+    <h2 class="group1">Bee</h2>
+    <h2 class="group1">Cat</h2>
+    <h2>Dog</h2>
+    <h2>Egg</h2>
+
+
+    <script>
+
+
+        // 10. 透過 getElementsByTagName 取得所有 <h2> 元素
+        var x = document.getElementsByTagName("h2");
+        console.log(x); // HTMLCollection       
+        console.log(x[0]); // <h2 id="myApple">Apple</h2>
+
+
+        // 20. 透過 getElementsByClassName 取得擁有 class 類別的 元素
+        var y = document.getElementsByClassName("group1");
+        console.log(y); // HTMLCollection       
+        console.log(y[0]);
+
+
+        // 30. 透過 getElementById 取得 id 為 myApple 的元素
+        var z = document.getElementById("myApple");
+        console.log(z); // <h2 id="myApple">Apple</h2>
+        console.log(z.innerText); // Apple
+        z.innerText = "皮卡丘"; // 將內容 Apple 改成 皮卡丘
+
+
+        // 實驗: 
+        // y.innerText = "胖丁"; // 失效。沒有跟它說要改哪個元素
+        y[0].innerText = "胖丁"; // 將內容 Bee 改成 胖丁
+
+
+        // 40. 透過 CSS Selectors 取得 元素
+        //     querySelector()
+        //     querySelectorAll()
+        console.clear();
+
+
+        var temp1 = document.querySelector("#myApple");
+        console.log(temp1); // <h2 id="myApple">皮卡丘</h2>
+
+
+        var temp2 = document.querySelector(".group1");
+        console.log(temp2); // <h2 class="group1">胖丁</h2>
+        // 問題: 只會拿到一個元素
+
+
+        var temp3 = document.querySelectorAll(".group1");
+        console.log(temp3); // NodeList
+        console.log(temp3[0]); // <h2 class="group1">胖丁</h2>
+        console.log(temp3[1]); // <h2 class="group1">Cat</h2>              
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+
+</html>

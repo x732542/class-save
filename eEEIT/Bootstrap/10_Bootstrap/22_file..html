@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <title>22.file</title>
+
+</head>
+
+<body>
+    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title"
+        data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Click to toggle popover</button>
+    <Script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </Script>
+</body>
+
+
+</html>

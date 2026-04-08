@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/position.css">
+    <style>
+        /* 10. 將 #reddiv 固定在右下角，並且顯示圖片 */
+        #reddiv {
+            position: fixed;
+            right: 0px;
+            bottom: 0;
+            background-image: url("../img/onepiece20th_logo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>position: fixed</h3>
+
+    <!-- 20. 該在哪裡加上超連結，點選之後連到任意網頁？ -->
+
+    <div class="demo">
+        <a href="https://www.youtube.com/"><div id="reddiv"></div></a>
+        <div id="greendiv">Green</div>
+        <div id="bluediv">Blue</div>
+    </div>
+
+</body>
+
+</html>

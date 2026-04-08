@@ -1,0 +1,36 @@
+資料夾A
+
+|-- apple.jpg
+
+|
+
+|-- 資料夾B
+
+|   |-- dog.jpg
+
+|
+
+|-- 資料夾C
+
+    |-- cat.jpg
+
+    |-- index.html
+ 
+----------------------------------------------
+
+情境: 在 index.html 加入超連結，連結到圖片
+ 
+Q1. 連結到 cat.jpg。  
+<a href=" ??? "></a>
+A:<a href="./cat.jpg "></a> or <a href="cat.jpg "></a>
+
+ 
+Q2. 連結到 apple.jpg。
+<!-- ../ 上一層 -->
+<a href=" ??? "></a>
+A:<a href=" ../apple.jpg "></a>
+ 
+Q3. 連結到 dog.jpg。  
+<a href=" ??? "></a>
+A:<a href=" ../資料夾B/dog.jpg "></a>
+ 
