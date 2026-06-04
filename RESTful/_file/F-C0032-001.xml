@@ -1,0 +1,2990 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cwaopendata xmlns="urn:cwa:gov:tw:cwacommon:0.1">
+    <identifier >334f9015-f4f0-2cad-79cf-26ea96662a19</identifier>
+    <sender >weather@cwa.gov.tw</sender>
+    <sent >2026-05-28T22:24:01+08:00</sent>
+    <status >Actual</status>
+    <msgType >Issue</msgType>
+    <source >MFC</source>
+    <dataid >C0032-001</dataid>
+    <scope >Public</scope>
+    <dataset >
+        <datasetInfo>
+            <datasetDescription>三十六小時天氣預報</datasetDescription>
+            <issueTime>2026-05-28T23:00:00+08:00</issueTime>
+            <update>2026-05-28T22:24:01+08:00</update>
+</datasetInfo>
+        <location>
+            <locationName>臺北市</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨或雷雨-台北市</parameterName>
+                        <parameterValue>15</parameterValue>
+                    </parameter>
+                </time>
+
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>陰時多雲短暫陣雨或雷雨-台北市</parameterName>
+                        <parameterValue>17</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>陰時多雲-台北市</parameterName>
+                        <parameterValue>6</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>29</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>50</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>70</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>10</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>新北市</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨或雷雨-新北市</parameterName>
+                        <parameterValue>15</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>陰時多雲短暫陣雨或雷雨-新北市</parameterName>
+                        <parameterValue>17</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>陰時多雲-新北市</parameterName>
+                        <parameterValue>6</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>29</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>50</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>50</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>20</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>桃園市</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>15</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>陰時多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>17</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>晴時多雲</parameterName>
+                        <parameterValue>2</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>50</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>50</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>10</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>臺中市</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>晴時多雲</parameterName>
+                        <parameterValue>2</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>15</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>陰時多雲短暫陣雨</parameterName>
+                        <parameterValue>10</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>29</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>32</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>20</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>臺南市</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>晴時多雲</parameterName>
+                        <parameterValue>2</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲午後短暫雷陣雨</parameterName>
+                        <parameterValue>22</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲時晴</parameterName>
+                        <parameterValue>3</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>29</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>33</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>10</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>20</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>高雄市</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>晴時多雲</parameterName>
+                        <parameterValue>2</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲午後短暫雷陣雨</parameterName>
+                        <parameterValue>22</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨</parameterName>
+                        <parameterValue>8</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>29</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>34</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>31</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>10</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>基隆市</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>15</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>陰時多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>17</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲</parameterName>
+                        <parameterValue>4</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>50</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>50</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>10</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>新竹縣</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>15</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>陰時多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>17</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲時晴</parameterName>
+                        <parameterValue>3</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>50</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>10</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>新竹市</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>15</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲時陰短暫陣雨或雷雨</parameterName>
+                        <parameterValue>16</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲時晴</parameterName>
+                        <parameterValue>3</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>10</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>苗栗縣</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>晴時多雲</parameterName>
+                        <parameterValue>2</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲時陰短暫陣雨或雷雨</parameterName>
+                        <parameterValue>16</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲時陰</parameterName>
+                        <parameterValue>5</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>31</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>29</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>20</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>10</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>彰化縣</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>晴時多雲</parameterName>
+                        <parameterValue>2</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>15</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲時陰</parameterName>
+                        <parameterValue>5</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>32</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>20</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>20</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>南投縣</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>15</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>15</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨</parameterName>
+                        <parameterValue>8</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>33</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>雲林縣</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>晴時多雲</parameterName>
+                        <parameterValue>2</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>15</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨</parameterName>
+                        <parameterValue>8</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>33</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>20</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>嘉義縣</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>晴時多雲</parameterName>
+                        <parameterValue>2</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲時陰短暫陣雨或雷雨</parameterName>
+                        <parameterValue>16</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨</parameterName>
+                        <parameterValue>8</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>33</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>10</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>嘉義市</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>晴時多雲</parameterName>
+                        <parameterValue>2</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>15</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨</parameterName>
+                        <parameterValue>8</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>34</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>31</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至易中暑</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>20</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>屏東縣</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>晴時多雲</parameterName>
+                        <parameterValue>2</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲午後短暫雷陣雨</parameterName>
+                        <parameterValue>22</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨</parameterName>
+                        <parameterValue>8</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>29</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>35</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>32</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至易中暑</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>10</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>50</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>40</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>宜蘭縣</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>15</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>陰時多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>17</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>陰時多雲短暫陣雨</parameterName>
+                        <parameterValue>10</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>24</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>40</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>花蓮縣</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>晴時多雲</parameterName>
+                        <parameterValue>2</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲午後短暫雷陣雨</parameterName>
+                        <parameterValue>22</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>陰時多雲短暫陣雨</parameterName>
+                        <parameterValue>10</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>31</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>10</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>臺東縣</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>晴時多雲</parameterName>
+                        <parameterValue>2</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>晴午後短暫雷陣雨</parameterName>
+                        <parameterValue>21</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨</parameterName>
+                        <parameterValue>8</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>32</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>29</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>10</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>40</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>澎湖縣</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>晴時多雲</parameterName>
+                        <parameterValue>2</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>15</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨</parameterName>
+                        <parameterValue>8</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>31</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>28</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>20</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>金門縣</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>15</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>多雲短暫陣雨或雷雨</parameterName>
+                        <parameterValue>15</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>陰時多雲</parameterName>
+                        <parameterValue>6</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>26</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適至悶熱</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>30</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>20</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+        <location>
+            <locationName>連江縣</locationName>
+            <weatherElement>
+                <elementName>Wx</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>陰短暫陣雨或雷雨</parameterName>
+                        <parameterValue>18</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>陰短暫陣雨或雷雨</parameterName>
+                        <parameterValue>18</parameterValue>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>陰天</parameterName>
+                        <parameterValue>7</parameterValue>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MaxT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>27</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>MinT</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>25</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>24</parameterName>
+                        <parameterUnit>C</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>CI</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>舒適</parameterName>
+</parameter>
+</time>
+</weatherElement>
+            <weatherElement>
+                <elementName>PoP</elementName>
+                <time>
+                    <startTime>2026-05-29T00:00:00+08:00</startTime>
+                    <endTime>2026-05-29T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>50</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T06:00:00+08:00</startTime>
+                    <endTime>2026-05-29T18:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>50</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+                <time>
+                    <startTime>2026-05-29T18:00:00+08:00</startTime>
+                    <endTime>2026-05-30T06:00:00+08:00</endTime>
+                    <parameter>
+                        <parameterName>10</parameterName>
+                        <parameterUnit>百分比</parameterUnit>
+</parameter>
+</time>
+</weatherElement>
+</location>
+</dataset>
+</cwaopendata>

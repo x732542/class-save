@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>$.ajax() 練習</title>
+    <script src="../_js/jquery-3.6.0.js"></script>
+    <style>
+      #divResult > p {
+        background-color: aqua;
+        padding: 10px;
+      }
+      /* 冒號: 虛擬類別 */
+      input:checked + span {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h4>取得資料測試平台</h4>
+    <p>
+      <a href="https://jsonplaceholder.typicode.com/"
+        >https://jsonplaceholder.typicode.com/</a
+      >
+    </p>
+    <h4>jQuery.ajax()</h4>
+    <p>
+      <a href="https://api.jquery.com/jQuery.ajax/"
+        >https://api.jquery.com/jQuery.ajax/</a
+      >
+    </p>
+    <hr />
+
+    <button id="btnAjax">$.ajax()</button>
+    <button id="btnAjaxV2">$.ajax()</button>
+    <hr />
+
+    <p>按鈕點選後底下依序顯示 userid - id - completed - title</p>
+    <p>例如: 10 - 181 - false - ut cupiditate sequi aliquam fuga maiores</p>
+    <div id="divResult"></div>
+    <hr />
+
+    <script>
+      // 10. 按鈕點選後，讀取使用者待辦項目清單
+      btnAjax.onclick = function () {
+        // 20. 觀察資料結構 https://jsonplaceholder.typicode.com/todos
+        //     試著將 使用者編號為10號的待辦事項 顯示在網頁上
+        const myurl = "https://jsonplaceholder.typicode.com/todos";
+        $.ajax({
+          url: myurl,
+          success: function (myData) {
+            $.each(myData, (i, v) => {
+              if (v.userId == 10) {
+                $("#divResult").append(
+                  `${v.id} - ${v.completed} - ${v.title}<br>`,
+                );
+                // let elem = $("<p>");
+                // elem.text(`${v.userId} - ${v.id} - ${v.completed} - ${v.title}`);
+                // $("#divResult").append(elem);
+              }
+            });
+          },
+        });
+      };
+      btnAjaxV2.onclick = function () {
+        // 20. 觀察資料結構 https://jsonplaceholder.typicode.com/todos
+        //     試著將 使用者編號為10號的待辦事項 顯示在網頁上
+        const myurl = "https://jsonplaceholder.typicode.com/todos";
+        $.ajax({
+          url: myurl,
+          success: function (myData) {
+            $.each(myData, (i, v) => {
+              if (v.userId == 10) {
+                $("#divResult").append(
+                  `<p> 
+                    <input type ="checkbox" ${(v.completed)?"checked":""}> 
+                    <span>${v.id} - ${v.completed} - ${v.title}
+                    </span>
+                    </p>`,
+                );
+              }
+            });
+          },
+        });
+      };
+    </script>
+  </body>
+</html>

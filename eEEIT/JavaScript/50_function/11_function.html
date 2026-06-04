@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <h4>將功能獨立出來，提高程式的可用性</h4>
+    <p><a href="https://www.w3schools.com/js/js_functions.asp">https://www.w3schools.com/js/js_functions.asp</a></p>
+
+    <script>
+
+        // 10. 函式宣告（Function Declaration）
+
+
+        // 20. 需要資訊的函式 / 傳入參數的函式
+        //     呼叫需要資訊的函式時，要把資訊帶入
+        function bee(a, b) {
+            console.log(a);
+            console.log(b);
+
+        }
+        bee(2, 3, 3, 3, 3, 3);
+        bee();
+        // 30. 函式回傳值
+        console.clear();
+        function cat() {
+            console.log("貓摸");
+            return 100;
+
+        }
+        cat();
+        console.log(cat());
+
+
+        // 40. 函式運算式（Function Expressions）
+        //     變數 存放 函式(計畫的內容)，但呼叫時要小心
+        // var dog = function () {
+        //     console.log('小狗');
+
+        // };
+        // dog();
+        // 45. 函式運算式，也可以設計有參數的形式
+        var temp = function (a, b) {
+            return a * b;
+        }
+        console.log(temp(10, 100))
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../_js/jquery-3.6.0.js"></script>
+  </head>
+
+  <body>
+    <h4>線上API測試平台 (點選網頁下方的 GET SINGLE USER)</h4>
+    <p><a href="https://reqres.in/">https://reqres.in/</a></p>
+    <h4>jQuery.get()</h4>
+    <p>
+      <a href="https://api.jquery.com/jquery.get/"
+        >https://api.jquery.com/jquery.get/</a
+      >
+    </p>
+    <hr />
+    <button id="btnGetData">取得資料</button>
+    <div id="divResult">
+      顯示資料
+      <input type="email" /> <br /><br />
+      <img />
+    </div>
+    <hr />
+
+    <script>
+      // 10. 按鈕點選後，取得使用者資料 (測試)
+      btnGetData.onclick = function () {
+        const url = "https://randomuser.me/api/?seed=apple5566";
+
+        // 20. 觀察資料結構
+        //click使用$.get()把資料帶回來
+        $.get(url, function (data) {
+          // 確認資料有回來
+          // 找資料特性 : HTML|XML|JSON string
+          // 按照物件選擇處理方式
+          // jQuery 特性 -> 以處理成物件 ->可直接提取內容
+          // 物件取值->物件.key  陣列取值-> 陣列    [索引值]
+          //   console.log(data);           // {results:,info}
+          //   console.log(data.results);   // [{...}] 是個陣列
+          //   console.log(data.results[0]);// {}      是個物件
+
+          //   console.log(data.results[0].email);//   email
+          //   console.log(data.results[0].picture.medium);//   大頭照
+
+          //   * https://randomuser.me/api/?seed=apple5566
+          //     讀取email和大頭照顯示到網頁上 (單一)
+          $('#divResult>input[type="email"]').val(data.results[0].email);
+          $("#divResult>img").attr("src", data.results[0].picture.medium);
+
+          //   * https://randomuser.me/api/?results=10
+          //     讀取email和大頭照顯示到網頁上 (多)
+        });
+      };
+    </script>
+  </body>
+</html>

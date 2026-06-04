@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h4>DOMParser</h4>
+    <p>
+      <a href="https://developer.mozilla.org/zh-TW/docs/Web/API/DOMParser"
+        >https://developer.mozilla.org/zh-TW/docs/Web/API/DOMParser</a
+      >
+    </p>
+
+    <h4>DOMParser.parseFromString()</h4>
+    <p>
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/API/DOMParser/parseFromString"
+        >https://developer.mozilla.org/en-US/docs/Web/API/DOMParser/parseFromString</a
+      >
+    </p>
+
+    <h4>XML Parser</h4>
+    <p>
+      <a href="https://www.w3schools.com/xml/xml_parser.asp"
+        >https://www.w3schools.com/xml/xml_parser.asp</a
+      >
+    </p>
+
+    <h4>w3schools cd_catalog.xml</h4>
+    <p>
+      <a href="https://www.w3schools.com/xml/cd_catalog.xml"
+        >https://www.w3schools.com/xml/cd_catalog.xml</a
+      >
+    </p>
+
+    <p id="demoV1"></p>
+    <hr />
+    <p id="demoV2"></p>
+
+    <script>
+      // 10. 觀察底下文字結構
+      // htmlstring ->字串裡有html標籤
+      // xmlstring ->字串裡有xml標籤
+      const temp = `
+        <bookstore>
+            <book>
+                <title>ONE PIECE 100</title>
+                <author>尾田栄一郎</author>
+                <date>2021/10/8</date>
+            </book>
+            <book>
+                <title>HUNTER × HUNTER 36</title>
+                <author>冨樫義博</author>
+                <date>2018/12/21</date>
+            </book>
+        </bookstore>`;
+
+      // 20. 透過 new DOMParser() 將上述文字轉成DOM文件
+      //      * parseFromString
+      let apple = new DOMParser();
+      let bee = apple.parseFromString(temp, "text/xml");
+      let cat = bee.getElementsByTagName("author");
+      console.log(cat);
+
+      // 25. 解讀DOM文件
+      //   【目標】取得"作者名稱"並顯示到網頁上
+      //      * getElementsByTagName()
+      //      * childNodes[]  或者  innerHTML
+
+      // //   失敗，當前沒有這個屬性 ==>新的物件 不是原本的documont
+      //   demoV2.innerHTML = cat[1].innerText;
+      //   demoV1.innerHTML = cat[0].innerHTML;
+      //   demoV2.innerHTML = cat[1].textContent;
+
+      demoV1.innerHTML = cat[0].childNodes[0].data;
+      demoV2.innerHTML = cat[1].childNodes[0].data;
+    </script>
+  </body>
+</html>

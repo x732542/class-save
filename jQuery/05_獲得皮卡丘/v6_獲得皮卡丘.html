@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <p>v6: 該如何在 console (主控台) 顯示「皮卡丘」字串？</p>
+    <p>請找到底下備註「這裡該怎麼做?」的那一行程式碼；限制只能修改該行程式碼</p>
+    <script>
+      function apple(cat) {
+        var result = cat();
+        console.log(result);
+      }
+      // apple(function () {return "皮卡丘";}); // 這裡該怎麼做?
+      
+       apple( ()=>"皮卡丘-箭頭函式"); // 這裡該怎麼做?
+    </script>
+  </body>
+</html>

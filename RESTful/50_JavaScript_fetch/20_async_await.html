@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h4>async function</h4>
+    <p>
+      <a
+        href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/async_function"
+        >https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/async_function</a
+      >
+    </p>
+
+    <h4>await</h4>
+    <p>
+      <a
+        href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/await"
+        >https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/await</a
+      >
+    </p>
+
+    <button id="btn10">btn 10 async</button>
+    <button id="btn20">btn 20 await</button>
+
+    <script>
+      // 10. async
+      btn10.onclick = function () {
+        async function apple() {
+          return "aaa";
+        }
+        let x = apple();
+        console.log(x); // 回傳 Promise物件
+        x.then(function (dog) {
+          console.log(dog);
+        });
+      };
+
+      // 20. await
+      btn20.onclick = function () {
+        // 我想要有一個回傳Promise的函式
+        async function bee() {
+          return "我是蜜蜂";
+        }
+        
+        // await需要放在async裡面
+        async function cat() {
+          let egg = await bee();
+          console.log(egg); // await等回來的是甚麼? 這裡等到字串
+        }
+        cat();
+      };
+    </script>
+  </body>
+</html>

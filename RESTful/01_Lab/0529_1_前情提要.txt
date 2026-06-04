@@ -1,0 +1,19 @@
+程式語言             程式內容物                描述程式內容物
+HTML                id class src href           屬性
+HTML                div img p table             元素|element
+CSS                 color border font-size      屬性
+CSS                 #id .class                  選擇器
+JavaScript          let const                   宣告變數
+JavaScript          function                    宣告函式
+---------------------------------------------------------
+JavaScript          [{},{}]                     一個陣列裡有很多物件
+                                                ->JSON
+---------------------------------------------------------                                                
+Java                int string bool             宣告變數
+
+
+(x)                 (x)                         -> RESTful
+                                                -> 前後端交換資料的風格
+
+                                                -> AJAX
+                                                -> 讓網頁能在不重新整理整個頁面的情況下，與伺服器進行非同步資料交換

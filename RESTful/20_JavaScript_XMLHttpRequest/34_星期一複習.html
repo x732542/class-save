@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <button id="btnGetOpenData">取得天氣資料</button>
+    <hr />
+    <select id="cityList"></select>
+    <hr />
+    <div id="divResult"></div>
+
+    //全域用
+    <button id="btnGetOpenDataB">取得天氣資料</button>
+    <hr />
+    <select id="cityListB"></select>
+    <hr />
+    <div id="divResultB"></div>
+
+    <script>
+      //函式獨立宣告 | 一段功能分離(變函式)  出來
+
+      //0525討論過函式宣告的兩種方式，在jQuery筆記，需要請往前複習
+      let txtLoad = function () {
+        let parser = new DOMParser();
+        let xmlDocument = parser.parseFromString(this.responseText, "text/xml");
+        let locationList = xmlDocument.getElementsByTagName("locationName");
+        // console.log(locationList);
+
+        addOptionElement(locationList);
+      };
+      let btnClick = function () {
+        let xhr = new XMLHttpRequest();
+        xhr.addEventListener("load", txtLoad);
+        let parser = new DOMParser();
+        xhr.open("GET", "../_file/F-C0032-001.xml");
+        xhr.send();
+
+        document.getElementById("btnGetOpenData").disabled = true;
+      };
+      let addOptionElement = function (locationList) {
+        for (let k = 0; k < locationList.length; k++) {
+          console.log(locationList[k].innerHTML);
+          //    將縣市名稱增加到下拉選單中 -JavaScript
+          let egg = document.createElement("option"); //<option></option>
+          egg.innerText = locationList[k].innerHTML; //<option>台北市</option>
+          egg.value = k; //<option value = 0 >台北市</option>
+          cityList.append(egg);
+        }
+      };
+
+      let selectChange = function () {};
+      //0525討論過綁定事件的三種方式，在jQuery筆記，需要請往前複習
+      //兩種方式都可以
+      document
+        .getElementById("btnGetOpenData")
+        .addEventListener("click", btnClick);
+      cityList.addEventListener("change", selectChange);
+
+      // let x = document.getElementById("divResult")
+      // divResule.innerHTML = x
+
+      //全域變數版
+      let locationListB;
+      let txtLoadB = function () {
+        let parser = new DOMParser();
+        let xmlDocument = parser.parseFromString(this.responseText, "text/xml");
+        locationListB = xmlDocument.getElementsByTagName("locationName");
+        // console.log(locationList);
+        // 1.locationList變成全域(盡量少做)
+        // 2.參數傳入
+        addOptionElementB(locationListB);
+      };
+      let btnClickB = function () {
+        let xhr = new XMLHttpRequest();
+        xhr.addEventListener("load", txtLoadB);
+        let parser = new DOMParser();
+        xhr.open("GET", "../_file/F-C0032-001.xml");
+        xhr.send();
+      };
+
+      let addOptionElementB = function (locationListB) {
+        for (let k = 0; k < locationListB.length; k++) {
+          console.log(locationListB[k].innerHTML);
+          //    將縣市名稱增加到下拉選單中 -JavaScript
+          let egg = document.createElement("option"); //<option></option>
+          egg.innerText = locationListB[k].innerHTML; //<option>台北市</option>
+          egg.value = k; //<option value = 0 >台北市</option>
+          cityListB.append(egg);
+        }
+      };
+      //0525討論過綁定事件的三種方式，在jQuery筆記，需要請往前複習
+      document
+        .getElementById("btnGetOpenDataB")
+        .addEventListener("click", btnClickB);
+    </script>
+  </body>
+</html>

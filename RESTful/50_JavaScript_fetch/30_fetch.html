@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h4>Fetch介紹</h4>
+    <p>
+      <a
+        href="https://developer.mozilla.org/zh-TW/docs/Web/API/Fetch_API/Using_Fetch"
+        target="_blank"
+        >MDN 文件：使用 Fetch</a
+      >
+    </p>
+
+    <button id="btn10">10. 使用 fetch + then 取得資料</button>
+    <button id="btn20">20. 使用 fetch + async/await 取得資料</button>
+    <hr />
+
+    <div id="divResult">
+      <!-- 資料將會顯示在這裡 -->
+    </div>
+
+    <script>
+      // 【目標】使用 fetch 抓取 Random User的資料，並顯示在畫面上
+      // https://randomuser.me/api/?results=3
+
+      // 10. fetch + .then() 寫法
+      btn10.onclick = function () {
+        //fetch ->回傳Response->.json 轉換為Promise->用.then二次處理
+        fetch("https://randomuser.me/api/?results=3")
+          .then(function (data) {
+            //   console.log(data);        // Response{}
+            //   console.log(data.json()); // Promise {}
+            return data.json();
+          })
+          .then(function (apple) {
+            console.log(apple); // 物件 資料出現!
+            // 3個img是因為目前的測試資料，會回傳3個使用者 -> api/?results=
+            // results[0].picture.large -> 6/2已討論過的結構
+            divResult.innerHTML += `<img src =${apple.results[0].picture.large}>`;
+            divResult.innerHTML += `<img src =${apple.results[1].picture.large}>`;
+            divResult.innerHTML += `<img src =${apple.results[2].picture.large}>`;
+          });
+      };
+
+      // 20. fetch + async / await 寫法
+      btn20.onclick = async function () {
+        let apple = await fetch("https://randomuser.me/api/?results=3");
+        let bee = await apple.json();
+        console.log(bee); // 資料本人!   {result:Array(3),info:...}
+        // 把資料放到畫面上
+      };
+    </script>
+  </body>
+</html>

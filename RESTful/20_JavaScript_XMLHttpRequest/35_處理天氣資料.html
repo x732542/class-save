@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <button id="btnGetOpenData">取得天氣資料</button>
+    <hr />
+    <select id="cityList"></select>
+    <hr />
+    <div id="divResult"></div>
+
+    <script>
+      // xmlhttprequest
+      // ->txtLoad->DOMParser
+
+      let txtLoad = function () {
+        let parser = new DOMParser();
+        let xmlDocument = parser.parseFromString(this.responseText, "text/xml");
+
+        //將縣市名稱增加到下拉選單中 ->JavaScript
+        let locationList = xmlDocument.getElementsByTagName("locationName");
+        console.log(locationList);
+        addOptionElement(locationList);
+
+        // 取得縣市天氣資料(縣市標籤後面那一個天氣資料) +
+        // 設定天氣資料
+        let tempList = xmlDocument.querySelectorAll(
+          "locationName+weatherElement",
+        );
+        setWeather(tempList);
+      };
+      let setWeather = function (tempList) {
+        //原始資料
+        console.log(tempList);
+
+        //探勘中
+        //tempList[0]                                         -> 台北市
+        //tempList[0].children[0]                             -> elementName
+
+        //tempList[0].children[1]                             -> time(0-12)
+        //tempList[0].children[1].children[0]                 -> startTime(O)
+        //tempList[0].children[1].children[1]                 -> endTime(O)
+        //tempList[0].children[1].children[2]                 -> parameter
+        //tempList[0].children[1].children[2].children[0]     -> parameterName(O)
+        //tempList[0].children[1].children[2].children[1]     -> parameterValue
+
+        //tempList[0].children[2]                             -> time(12-24)
+        //tempList[0].children[3]                             -> time(24-36)
+
+        let t11 = tempList[0].children[1].children[0].innerHTML;
+        let t12 = tempList[0].children[1].children[1].innerHTML;
+        let t13 = tempList[0].children[1].children[2].children[0].innerHTML;
+
+        console.log(t11);
+        console.log(t12);
+        console.log(t13);
+
+        let t21 = tempList[0].children[2].children[0].innerHTML;
+        let t22 = tempList[0].children[2].children[1].innerHTML;
+        let t23 = tempList[0].children[2].children[2].children[0].innerHTML;
+
+        console.log(t21);
+        console.log(t22);
+        console.log(t23);
+
+        let t31 = tempList[0].children[3].children[0].innerHTML;
+        let t32 = tempList[0].children[3].children[1].innerHTML;
+        let t33 = tempList[0].children[3].children[2].children[0].innerHTML;
+
+        console.log(t31);
+        console.log(t32);
+        console.log(t33);
+      };
+      let btnClick = function () {
+        let xhr = new XMLHttpRequest();
+        xhr.addEventListener("load", txtLoad);
+        let parser = new DOMParser();
+        xhr.open("GET", "../_file/F-C0032-001.xml");
+        xhr.send();
+
+        document.getElementById("btnGetOpenData").disabled = true;
+      };
+      let addOptionElement = function (locationList) {
+        for (let k = 0; k < locationList.length; k++) {
+          console.log(locationList[k].innerHTML);
+          //    將縣市名稱增加到下拉選單中 -JavaScript
+          let egg = document.createElement("option"); //<option></option>
+          egg.innerText = locationList[k].innerHTML; //<option>台北市</option>
+          egg.value = k; //<option value = 0 >台北市</option>
+          cityList.append(egg);
+        }
+      };
+      let selectChange = function () {
+        let x = cityList.value;
+        divResult.innerHTML = x ;
+      };
+
+      document
+        .getElementById("btnGetOpenData")
+        .addEventListener("click", btnClick);
+      cityList.addEventListener("change", selectChange);
+    </script>
+  </body>
+</html>

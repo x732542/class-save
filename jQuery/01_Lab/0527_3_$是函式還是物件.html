@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 變數 先當函式 然後才用據點新增屬性 ->OK
+      // 變數 先當物件 然後才設定函式
+
+      // . -> 取值
+      // . -> 新增
+      let pika = { name: "香蕉" };
+      pika.name = "雷丘"; //取值
+      console.log(pika.name);
+
+      pika.Apppppple = "apple";
+      console.log(pika.Apppppple);
+
+      let $ = function () {
+        console.log("我在模仿");
+      };
+      $(); // ->$ 函式
+      $.apple = "我是蘋果"; //->物件
+      console.log("=========");
+      $();
+      console.log($.apple);
+
+      //變化為 物件+函式 都可調用
+      console.clear();
+
+      let a = { me: "appled" };
+      console.log(a.me);
+      a = function () {
+        console.log("ban");
+      };
+      a();
+      console.log(a.me);
+      console.log(a().me);
+    </script>
+  </body>
+</html>

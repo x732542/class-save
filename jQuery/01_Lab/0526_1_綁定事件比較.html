@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<button id="buttonA">按鈕A</button>    
+
+<button id="buttonB">按鈕B</button>
+
+<script>
+    function apple(){alert("測試結果A")}
+    function bee(){alert("測試結果B")}
+
+    //只會出現蜜蜂不會出現蘋果
+    buttonA.onclick = apple;
+    buttonA.onclick = bee;
+    
+    //這樣會成功
+    buttonB.addEventListener("click",apple);
+    buttonB.addEventListener("click",bee);
+
+
+</script>    
+
+</body>
+</html>

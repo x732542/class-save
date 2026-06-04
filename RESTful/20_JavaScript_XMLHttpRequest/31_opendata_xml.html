@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h4>一般天氣預報-今明36小時天氣預報</h4>
+    <p>
+      <a href="https://data.gov.tw/dataset/6069"
+        >https://data.gov.tw/dataset/6069</a
+      >
+    </p>
+
+    <h4>預報 XML 產品預報因子欄位中文說明表</h4>
+    <p>
+      <a href="https://opendata.cwa.gov.tw/opendatadoc/MFC/A0012-001.pdf"
+        >https://opendata.cwa.gov.tw/opendatadoc/MFC/A0012-001.pdf</a
+      >
+    </p>
+
+    <h4>下載今明36小時天氣預報資料（XML格式）</h4>
+    <p>
+      <a
+        href="https://opendata.cwa.gov.tw/fileapi/v1/opendataapi/F-C0032-001?Authorization=rdec-key-123-45678-011121314&format=XML"
+        >https://opendata.cwa.gov.tw/fileapi/v1/opendataapi/F-C0032-001?Authorization=rdec-key-123-45678-011121314&format=XML</a
+      >
+    </p>
+
+    <button id="btnGetOpenData">取得天氣資料</button>
+    <hr />
+    <select id="cityList"></select>
+    <hr />
+    <div id="divResult"></div>
+
+    <script>
+      // 10. 點選按鈕時，透過 XMLHttpRequest 取得資料
+      btnGetOpenData.onclick = function () {
+        let xhr = new XMLHttpRequest();
+        xhr.addEventListener("load", function () {
+          let parser = new DOMParser();
+          let xmlDocument = parser.parseFromString(this.responseText,"text/xml",);
+          let locationList = xmlDocument.getElementsByTagName("locationName");
+          // console.log(locationList); //HTMLCollection(22)[]
+          //把22個縣市名稱顯示在主控台
+          // console.log(locationList[0].innerHTML);
+          // console.log(locationList[1].innerHTML);
+          // console.log(locationList[2].innerHTML);
+
+          //for  成功
+          for (let k = 0; k < locationList.length; k++) {
+            console.log(locationList[k].innerHTML);
+            //    將縣市名稱增加到下拉選單中 -JavaScript
+            let egg = document.createElement("option"); //<option></option>
+            egg.innerText = locationList[k].innerHTML; //<option>台北市</option>
+            egg.value = k; //<option value = 0 >台北市</option>
+            cityList.append(egg);
+          }
+
+          //-> foreach 失敗 ->not a function
+          //-> foreach是陣列的函式 -> 所以locationList不是陣列
+          //->                   [] :陣列
+          //-> HTMLCollection(22)[] :類陣列
+          //-> 類陣列變成陣列因為很像用foreach
+          // let dog = Array.from(locationList);
+          // dog.forEach((x) => console.log(x.innerHTML));
+        });
+
+      xhr.open("GET", "../_file/F-C0032-001.xml");
+        xhr.send();  
+      };
+      // 20. 取得資料後，進行資料整理
+      //      a. 縣市資料
+      //      b. 縣市天氣
+
+      // 30. 帶出使用者所選擇縣市對應的天氣資料
+    </script>
+  </body>
+</html>

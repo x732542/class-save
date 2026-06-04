@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.16.1/dist/axios.min.js"></script>
+</head>
+<body>
+    <!-- 
+    axios 技術文檔:
+    https://axios.rest/pages/getting-started/examples/commonjs 
+    -->
+    <button id="apple">測試</button>
+    <script>
+        apple.onclick = async function(){
+            let x = await axios.get('https://randomuser.me/api/?results=3');
+            console.log(x.data);
+        }
+    </script>
+</body>
+</html>

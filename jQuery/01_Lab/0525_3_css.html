@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      /* CSS: [] 屬性選擇器-> CSS資料夾 -> 70號檔案 */
+      input[type="button"] {
+        color: red;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../_js/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <!--HTML-->
+    <button>按鈕A</button>
+    <input type="button" value="按鈕B" />
+    <input type="submit" value="按鈕C" />
+
+    <script>
+      // jQuery
+      let x = $('input[type="button"]');
+      console.log(x);
+      
+      let y = $(":button");
+      console.log(y);
+
+    </script>
+  </body>
+</html>

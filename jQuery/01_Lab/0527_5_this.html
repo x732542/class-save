@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <!-- .this     : 關鍵字代表甚麼 -> 取決於你在哪裡使用他 -->
+    <!-- "在事件呼叫函式的時候呼叫this" 會獲得觸發事件的元素(誰發生事情就是誰) -->
+    <!--  在物件裡面 非箭頭函式 this 代表本人 -->
+     <!-- 在物件裡面 箭頭函式   this 代表 Window物件 -->
+    <button onclick="apple(this)">A</button>
+    <button onclick="apple(this)">B</button>
+    <button onclick="apple(this)">C</button>
+    <button onclick="apple(this)">D</button>
+    <button onclick="apple(this)">E</button>
+    <script>
+      //   第一種
+      function apple(x) {
+        console.log(x);
+      }
+      //   第二種
+      let bee = {
+        x: 5,
+        y: 10,
+        total: function (x, y) {
+          return this.x + this.y;
+          console.log(this);
+        },
+        demo: () => {
+          console.log(this); // Window物件
+        },
+      };
+      let cat = bee.demo();
+      //   console.log(cat);
+    </script>
+  </body>
+</html>

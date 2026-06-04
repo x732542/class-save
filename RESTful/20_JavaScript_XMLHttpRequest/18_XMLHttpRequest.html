@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="../_js/jquery-3.6.0.js"></script>
+  </head>
+
+  <body>
+    <button id="btnGetFileTV1">第一版: 複製貼上</button>
+    <button id="btnGetFileTV2">第二版: 設計函式</button>
+    <button id="btnGetFileF">讀取文字檔 async 參數傳入 false</button>
+    <hr />
+    <main>
+      <div id="divLeft"></div>
+      <div id="divRight"></div>
+    </main>
+
+    <script>
+      // 【目標】這裡先使用 XMLHttpRequest 讀取 本地端的文字檔
+      //      ( 稍後再使用 XMLHttpRequest 讀取 其他伺服器端的資料 )
+
+      //  #divLeft  顯示 ../_file/bigfile.txt   文字檔資料
+      //  #divRight 顯示 ../_file/smallfile.txt 文字檔資料
+
+      // 10. 先讀取 bigfile.txt ， 後讀取 smallfile.txt
+      //     測試 async 參數傳入 true
+      btnGetFileTV1.onclick = function () {
+        let apple = new XMLHttpRequest();
+        apple.addEventListener("load", function () {
+          //   console.log(this);
+          //   console.log(this.responseText);
+          //  把文字檔的內容顯示到 #divLeft
+          // $('#divLeft').html(this.responseText);
+          divRight.innerText = this.responseText;
+        });
+        // apple.open("GET", "../_file/bigfile.txt");
+        apple.open("GET", "../_file/smallfile.txt");
+        apple.send();
+      };
+
+      function cat(element, path, async) {
+        let apple = new XMLHttpRequest();
+        apple.addEventListener("load", function () {
+          x.innerText = this.responseText;
+        });
+        apple.open("GET", path, async);
+        apple.send();
+      }
+      btnGetFileTV2.onclick = function () {
+        cat(divLeft, "../_file/bigfile.txt", true);
+        cat(divRight, "../_file/smallfile.txt", true);
+      };
+      // 20. 先讀取 bigfile.txt ， 後讀取 smallfile.txt
+      //     測試 async 參數傳入 false
+      btnGetFileF.onclick = function () {
+        cat(divLeft, "../_file/bigfile.txt", false);
+        cat(divRight, "../_file/smallfile.txt", false);
+      };
+    </script>
+  </body>
+</html>

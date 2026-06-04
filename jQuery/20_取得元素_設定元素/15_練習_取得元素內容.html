@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="../_js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+
+    <h3 id="t--">Hello</h3>
+
+    <span id="a+b">1</span>
+    <span id="a-b">2</span>
+    <span id="a*b">3</span>
+    <span id="a/b">4</span>
+
+    <script>
+
+        // 10. 挑選 h3 元素，並且將抓取裡面的內容 
+        //      目標：取得 Hello 文字
+        let x1 = document.getElementById("t--").innerText;
+        console.log(x1);
+        
+        // 20. 透過 JavaScript 的方式抓取內容
+        //      目標：取得 1 ~ 4
+        // let y1 = document.getElementById("a+b").innerText;
+        // let y2 = document.getElementById("a-b").innerText;
+        // let y3 = document.getElementById("a*b").innerText;
+        // let y4 = document.getElementById("a/b").innerText;
+        // console.log(y1);
+        // console.log(y2);
+        // console.log(y3);
+        // console.log(y4);
+        
+        // 30. 透過 jQuery 的方式抓取內容
+        //      目標：取得 1 ~ 4
+        console.log("test");
+        //css 標籤撞車
+        let z1 =$('#a+b').text();
+        let z2 =$('#a-b').text();
+        let z3 =$('#a*b').text();
+        // let z4 =$('#a/b').text();
+        console.log(z1);
+        console.log(z2);
+        console.log(z3);
+        // console.log(z4);
+        console.log("test");
+        
+
+    </script>
+
+</body>
+
+</html>

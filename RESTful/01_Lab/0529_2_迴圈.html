@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../_js/jquery-3.6.0.js"></script>
+  </head>
+  <body>
+    <script>
+      //目標:取得陣列內容
+      let list = ["漢堡", "薯條", "雞塊"];
+      //v1 : 資料量大的時候不適合
+      console.log(list[0]);
+      console.log(list[1]);
+      console.log(list[2]);
+      //v2 for
+      console.log("==========v2");
+      for (let x = 0; x < list.length; x++) {
+        console.log(list[x]);
+      }
+
+      //v3 for in -> key | index 直接拿key 要加工
+      console.log("==========v3");
+      for (let apple in list) {
+        console.log(list[apple]);
+      }
+      //v4 for of -> value 直接拿右邊
+      console.log("==========v4");
+      for (const bee of list) {
+        console.log(bee);
+      }
+      //v5 forEach
+      console.log("==========v5");
+      list.forEach(function (value, index, array) {console.log(value);});
+      list.forEach(function (value) {console.log(value);});
+      list.forEach((value) =>{console.log(value);});
+      list.forEach(value =>{console.log(value);});
+      list.forEach(value =>console.log(value));
+      list.forEach(x =>console.log(x));
+      //v6 jQuery ->$.each
+      console.log("==========v6");
+      $.each(list, function (index, value) {
+        console.log(value);
+      });
+    </script>
+  </body>
+</html>

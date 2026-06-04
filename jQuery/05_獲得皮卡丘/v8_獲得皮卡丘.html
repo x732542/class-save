@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <p>v8: 該如何在 console (主控台) 顯示「皮卡丘」字串？</p>
+    <p>請根據這一行程式碼「a().b()」進行反推</p>
+    <script>
+      // 和前面幾個「使用函式」範例不同，這裡請進行撰寫的動作
+      function a() {
+        //   var b = (console.log("皮卡丘"))
+
+        return {
+          b: function () {
+            console.log("皮卡丘");
+          },
+        };
+      }
+
+      a().b(); // 目標: 希望底下這一行執行完  console (主控台)  就有皮卡丘字串
+    </script>
+  </body>
+</html>

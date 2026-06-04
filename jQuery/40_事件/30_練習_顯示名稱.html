@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../_js/jquery-3.7.1.js"></script>
+    <!-- 10. 參考結果設定對應 css -->
+    <style>
+      div {
+        /* float: left; */
+        display: inline-block;
+      }
+      .apple {
+        /* 隱藏 */
+        visibility: hidden;
+        /* 能見的 */
+        /* visibility: visible; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 20. 設定 div ， 裡面裝一張圖片和一段文字 -->
+    <div onmouseenter="" onmouseleave="">
+      <img src="../_image/butterfly.png" />
+      <p>蝴蝶</p>
+    </div>
+    <div>
+      <img src="../_image/cat.png" />
+      <p>貓</p>
+    </div>
+    <div>
+      <img src="../_image/dog.png" />
+      <p>狗</p>
+    </div>
+    <script>
+      //   $("p").css("display", "none");
+      //   $("img").hover(function () {
+      //     $("div>p").css("display", "grid");
+      //   });
+      $(function () {
+        $("p").addClass("apple");
+        $("div").hover(function () {
+          $(this).find("p").toggleClass("apple");
+        });
+      });
+    </script>
+  </body>
+</html>

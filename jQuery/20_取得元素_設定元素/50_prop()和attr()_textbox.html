@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../_js/jquery-3.7.1.js"></script>
+  </head>
+
+  <body>
+    <label for="userName">文字輸入方框:</label>
+    <input value="香蕉" id="userName" type="text" /><br /><br />
+    <button id="btnDemo">測試 $().prop() 和 $().attr()</button>
+    <hr />
+
+    <div>
+      <h4>測試區域:</h4>
+      <p>測試 prop ===><span id="testProp"> </span></p>
+      <p>測試 attr ===><span id="testAttr"> </span></p>
+    </div>
+
+    <script>
+      // 10. 透過 JavaScript 的方式將字串放入 #testProp,  #testAttr
+      // let x = document.getElementById("userName").innerText;
+      // console.log(x);
+      btnDemo.onclick = function () {
+      
+    //  //JS方式
+        // testProp.innerText = userName.value;
+        // testAttr.innerText = userName.value;
+        ////JQ
+        testProp.innerText = $('#userName').prop('value');
+        testAttr.innerText = $('#userName').attr('value');
+
+
+    };
+
+      // 20. 點選按鈕後，透過 $().prop() 和 $().attr() 等兩種方法取得 #userName 的值
+    
+    </script>
+  </body>
+</html>

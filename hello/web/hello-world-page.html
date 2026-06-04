@@ -1,0 +1,118 @@
+<!DOCTYPE html><html class="light" lang="zh-TW" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="tailwind.config.js"></script>
+<style>
+        body {
+            background-color: #faf8ff;
+            color: #131b2e;
+            overflow-x: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fade-in {
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .chinese-letter-spacing {
+            letter-spacing: 0.1em;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<header class="fixed top-0 left-0 w-full z-50 bg-surface dark:bg-on-background">
+<nav class="flex justify-between items-center px-gutter py-sm max-w-container-max mx-auto w-full">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">
+                Minimalist
+            </div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">首頁</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">關於我們</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">服務範疇</a>
+</div>
+<div class="flex items-center gap-sm">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors" data-icon="search">search</button>
+<button class="md:hidden material-symbols-outlined text-on-surface-variant" data-icon="menu">menu</button>
+</div>
+</nav>
+</header>
+<main class="min-h-screen flex flex-col items-center justify-center pt-xl relative overflow-hidden">
+<!-- Background Ambient Elements -->
+<div class="absolute top-1/4 -left-20 w-80 h-80 bg-primary/5 rounded-full blur-[100px]"></div>
+<div class="absolute bottom-1/4 -right-20 w-80 h-80 bg-secondary/5 rounded-full blur-[100px]"></div>
+<!-- Hero Canvas -->
+<section class="max-w-container-max mx-auto px-gutter w-full flex flex-col items-center text-center fade-in">
+<div class="mb-lg">
+<span class="inline-block px-sm py-xs bg-primary/10 text-primary font-label-md text-label-md rounded-lg mb-md">
+                    歡迎來到極簡世界
+                </span>
+<h1 class="font-headline-xl text-headline-xl md:text-[64px] text-on-surface leading-tight mb-sm tracking-tight chinese-letter-spacing">
+                    你好，世界！
+                </h1>
+<p class="font-headline-md text-headline-md text-on-surface-variant max-w-[600px] mx-auto opacity-80 leading-[1.8]">
+                    Hello, world! 在純粹的空間中，找尋思緒的平靜與設計的本質。
+                </p>
+</div>
+<div class="flex flex-col md:flex-row gap-md items-center mt-md">
+<button class="bg-primary hover:bg-primary-container text-on-primary px-xl py-sm rounded-lg font-label-md text-label-md transition-all active:scale-95 shadow-sm">
+                    探索更多
+                </button>
+
+</div>
+</section>
+<!-- Visual Anchor -->
+
+</main>
+
+<footer class="bg-surface dark:bg-on-background border-t border-outline-variant dark:border-tertiary-container">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter py-lg max-w-container-max mx-auto w-full">
+<div class="mb-md md:mb-0">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface dark:text-on-primary-fixed">Minimalist</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-xs">© 2024 Minimalist. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">隱私政策</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">服務條款</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">聯絡我們</a>
+</div>
+</div>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Micro-interaction for primary button
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.addEventListener('mousedown', () => {
+                    button.style.transform = 'scale(0.95)';
+                });
+                button.addEventListener('mouseup', () => {
+                    button.style.transform = 'scale(1)';
+                });
+            });
+
+            // Gentle parallax on image
+            const imageContainer = document.querySelector('.aspect-video');
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                if (imageContainer) {
+                    imageContainer.style.transform = `translateY(${scrolled * 0.05}px)`;
+                }
+            });
+        });
+    </script>
+
+
+</body></html>

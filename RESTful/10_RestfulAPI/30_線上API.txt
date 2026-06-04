@@ -1,0 +1,44 @@
+
+10. https://pokeapi.co/
+
+    * 取得寶可夢資訊：
+        妙蛙種子 (ID: 1)：https://pokeapi.co/api/v2/pokemon/1/
+        皮卡丘 (pikachu)：https://pokeapi.co/api/v2/pokemon/pikachu/
+
+    * 寶可夢API文件說明：https://pokeapi.co/docs/v2#pokemon
+    * * GraphQL 測試介面：https://graphql.pokeapi.co/v1beta2/console
+
+
+20. https://data.gov.tw/
+
+    * 政府資料開放平台：https://data.gov.tw/about
+
+
+30. https://randomuser.me/
+    
+    * 取得多筆使用者 (Requesting Multiple Users) - 加上 results 參數：
+      https://randomuser.me/api/?results=5
+    
+    * 指定特定性別 (Specifying a gender) - 加上 gender 參數：
+      https://randomuser.me/api/?gender=female
+
+
+
+50. https://jsonplaceholder.typicode.com
+
+        /posts  	100 posts
+        /comments	500 comments
+        /albums 	100 albums
+        /photos	    5000 photos
+        /todos	    200 todos
+        /users	    10 users
+
+60. https://dummyjson.com/
+
+     * 商品列表測試：https://dummyjson.com/products
+     * 圖片大小測試：https://dummyjson.com/image/200x100
+
+
+
+※　因為稍後會取得很多資料，因此我們來複習「迴圈」的幾種寫法
+    

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript JSON 練習</title>
+  </head>
+
+  <body>
+    <h4>JavaScript JSON</h4>
+    <p>
+      參考文件：<a href="https://www.w3schools.com/js/js_json.asp"
+        >https://www.w3schools.com/js/js_json.asp</a
+      >
+    </p>
+
+    <script>
+      // 10. 宣告一個物件陣列
+      let dataA = [
+        {
+          pid: 1,
+          pname: "apple",
+          pprice: 100,
+        },
+        {
+          pid: 2,
+          pname: "milk",
+          pprice: 200,
+        },
+      ];
+
+      // 20. JSON.stringify：把資料打包成「字串」
+      let x = JSON.stringify(dataA);
+      console.log(dataA); //(2)[{...},{...}]
+      console.log(x); //黑色的很多文字
+
+      console.log("----------------------------");
+
+      // 40. 宣告一個符合 JSON 格式的字串
+      //      注意：外層用單引號，內層屬性名必須用雙引號
+      let dataB =
+        '{"name": "Kevin", "age": 18, "skills": ["HTML", "CSS", "JS"]}';
+
+      // 50. JSON.parse：將這段JSON 格式的字串解析成 JavaScript 可以讀取的物件
+      console.log(dataB); //JSONstring -> key有雙引號
+      let y = JSON.parse(dataB);
+      console.log(y);
+      console.log(y.skills[1]);//請參考獲得皮卡丘(前四隻)
+    </script>
+  </body>
+</html>

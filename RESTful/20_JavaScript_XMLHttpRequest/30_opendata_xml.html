@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h4>一般天氣預報-今明36小時天氣預報</h4>
+    <p>
+      <a href="https://data.gov.tw/dataset/6069"
+        >https://data.gov.tw/dataset/6069</a
+      >
+    </p>
+
+    <h4>預報 XML 產品預報因子欄位中文說明表</h4>
+    <p>
+      <a href="https://opendata.cwa.gov.tw/opendatadoc/MFC/A0012-001.pdf"
+        >https://opendata.cwa.gov.tw/opendatadoc/MFC/A0012-001.pdf</a
+      >
+    </p>
+
+    <h4>下載今明36小時天氣預報資料（XML格式）</h4>
+    <p>
+      <a
+        href="https://opendata.cwa.gov.tw/fileapi/v1/opendataapi/F-C0032-001?Authorization=rdec-key-123-45678-011121314&format=XML"
+        >https://opendata.cwa.gov.tw/fileapi/v1/opendataapi/F-C0032-001?Authorization=rdec-key-123-45678-011121314&format=XML</a
+      >
+    </p>
+
+    <button id="btnGetOpenData">取得天氣資料</button>
+    <hr />
+    <select id="cityList"></select>
+    <hr />
+    <div id="divResult"></div>
+
+    <script>
+      // 10. 點選按鈕時，透過 XMLHttpRequest 取得資料
+      btnGetOpenData.onclick = function () {
+        //   $.get(,)
+        //    =
+        //    let xhr = new XMLHttpRequest();
+        //    xhr.addEventListener("load");
+        //    xhr.open("GET");
+        //    xhr.send();
+
+      };
+      // 20. 取得資料後，進行資料整理
+      //      a. 縣市資料
+      //      b. 縣市天氣
+
+      // 30. 帶出使用者所選擇縣市對應的天氣資料
+    </script>
+  </body>
+</html>

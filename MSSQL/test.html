@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="apple(this)">按鈕A</button>
+    <button onclick="apple(this)">按鈕B</button>
+
+    <script>
+        // function apple(x) {
+        //     console.log(x);            
+        // }
+
+
+        let person = {
+            punch: function() {
+                console.log(this);                
+            }
+            // walk: () => {
+            //     console.log(this);
+            // } 
+        };
+        person.punch();
+        // person.walk();
+        // console.log(this); // window
+        
+        // console.clear();
+
+        // let apple = {
+        //     name: person
+        // }
+
+        // apple.name(this);
+
+    </script>
+    <!-- <script>
+        function apple() {
+
+        }
+
+        var dog = function () {
+            console.log();
+            
+        };
+
+        var dog = () => {
+            console.log();            
+        };
+
+        const array = ["a", "b", "c"];
+
+        delete array[1];
+
+        // array.forEach((v) => {console.log(v)});
+
+        let idx = 0;
+        while (idx < array.length) {
+            console.log(array[idx]);
+            idx++;
+        }
+
+        
+        for (let i = 0; i < array.length; i++) {
+            console.log(array[i]);
+        }
+
+        // console.clear();
+
+        // let obj = {
+        //     name: "apple",
+        //     price: 100
+        // };
+
+        // for (let item in array) {
+        //     console.log(item);            
+        // }
+
+        // console.clear();
+
+        // for (let item of array) {
+        //     console.log(item);            
+        // }
+    </script> -->
+</body>
+</html>

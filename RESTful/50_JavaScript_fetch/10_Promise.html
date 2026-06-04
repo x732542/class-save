@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h4>JavaScript Promises</h4>
+    <p>
+      <a href="https://www.w3schools.com/js/js_promise.asp"
+        >https://www.w3schools.com/js/js_promise.asp</a
+      >
+    </p>
+
+    <h4>使用 Promise</h4>
+    <p>
+      <a
+        href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Using_promises"
+        >https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Using_promises</a
+      >
+    </p>
+
+    <script>
+      // 10. 宣告 + 測試 Promise 物件
+      let apple = Promise(function (a, b) {
+        if (true) {
+          a("a");
+        } else {
+          b("b");
+        }
+      });
+      apple.then(
+        function (aa) {
+          console.log("成功:" + aa);
+        },
+        function (bb) {
+          console.log("失敗:" + bb);
+        },
+      );
+    </script>
+  </body>
+</html>

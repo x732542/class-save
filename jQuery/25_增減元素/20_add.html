@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../_js/jquery-3.7.1.js"></script>
+  </head>
+
+  <body>
+    <button id="btnAdd">附加清單</button>
+    <hr />
+    <div>
+      <h4>底下是清單</h4>
+      <ol id="bee">
+        <li>迷客夏</li>
+        <li id="apple">50嵐</li>
+        <li>可不可熟成紅茶</li>
+      </ol>
+    </div>
+
+    <script>
+      btnAdd.onclick = function () {
+        // 10. 測試 + 比較底下幾種方法的差異:
+        //    $().before()
+        //    $().after()
+        $("#apple").before("<li>  清心(前面) </li>");
+        $("#apple").after ("<li>  UG(後面)   </li>");
+        //    $().prepend()
+        //    $().append()
+        $('#bee').prepend("<li>  得正(插隊) </li>");
+        $('#bee').append ("<li>  香蕉(排隊) </li>");
+        //------------------------
+        //    $().appendTo()
+         $("<li>  交相(排隊) </li>").appendTo('#bee');
+
+         $()
+      };
+    </script>
+  </body>
+</html>

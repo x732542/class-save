@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <button id="btnGetOpenData">練習</button>
+    <hr />
+    <select id="cityList" oninput="" onchange="">
+      <!-- <select id="cityList" onselect="clearInterval"> -->
+      <option value="0">A</option>
+      <option value="1">B</option>
+      <option value="2">C</option>
+      <option value="3">D</option>
+    </select>
+    <script>
+      // onchange or oninput都可以
+      function apple() {
+        let x = document.getElementById("cityList").value;
+        console.log(x);
+      }
+      document.getElementById("cityList").addEventListener("input", apple);
+      //   btnGetOpenData.onclick = function () {
+      //     // B: 清空
+      //     //   document.getElementById("cityList").innerHTML = '';
+      //     // document.getElementById("cityList").options.length = 0;
+
+      //     let egg = document.createElement("option"); //<option></option>
+      //     egg.innerText = "測試縣市"; //<option>台北市</option>
+      //     egg.value = 5566; //<option value = 0 >台北市</option>
+      //     cityList.append(egg);
+      //     // A: 不要使用者按第二次
+      //     // document.getElementById("btnGetOpenData").style.visibility = "hidden";
+      //     //    document.getElementById("btnGetOpenData").disabled = true;
+      //   };
+    </script>
+  </body>
+</html>

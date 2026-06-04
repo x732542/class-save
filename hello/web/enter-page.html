@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-TW"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Minimalist - 進入</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="tailwind.config.js"></script>
+<style>
+        body {
+            background-color: #faf8ff;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(79, 70, 229, 0.05) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(53, 37, 205, 0.03) 0px, transparent 50%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fade-in {
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .soft-glow {
+            box-shadow: 0px 4px 20px rgba(15, 23, 42, 0.05);
+        }
+    </style>
+</head>
+<body class="overflow-hidden">
+<!-- Header Navigation Shell (Contextual Suppression Logic applied, only brand logo shown for minimalist entry) -->
+<header class="docked full-width top-0 bg-surface flex justify-between items-center px-gutter py-sm max-w-container-max mx-auto w-full z-50">
+<div class="font-headline-md text-headline-md font-bold text-primary">Minimalist</div>
+</header>
+<!-- Main Entry Canvas -->
+<main class="flex-grow flex items-center justify-center relative px-gutter">
+<!-- Background Decorative Element (Soft Geometry) -->
+<div class="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
+<div class="w-[600px] h-[600px] bg-primary-container opacity-[0.03] rounded-full blur-3xl"></div>
+</div>
+<section class="max-w-md w-full text-center fade-in space-y-lg z-10">
+<!-- Brand Identity -->
+<div class="space-y-sm">
+<h1 class="font-headline-xl text-headline-xl text-on-background tracking-tight">
+                    純粹的起點
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[280px] mx-auto">
+                    體驗前所未有的簡約美學與高效能設計
+                </p>
+</div>
+<!-- Central Action -->
+<div class="pt-sm">
+<button class="group relative inline-flex items-center justify-center px-xl py-md bg-primary-container text-on-primary font-headline-sm text-headline-sm rounded-lg transition-all duration-300 hover:bg-primary hover:shadow-xl active:scale-95 soft-glow" onclick="this.classList.add('scale-95'); setTimeout(() =&gt; { window.location.reload(); }, 200);">
+<span class="mr-sm">進入</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<!-- Subtle Interaction Guide -->
+<div class="pt-lg flex flex-col items-center gap-xs opacity-40">
+<span class="font-label-md text-label-md text-outline">探索 Minimalist</span>
+<span class="material-symbols-outlined animate-bounce" data-icon="keyboard_double_arrow_down">keyboard_double_arrow_down</span>
+</div>
+</section>
+</main>
+<!-- Footer Component (Mandatory Styling from JSON) -->
+<footer class="full-width bottom-0 bg-surface border-t border-outline-variant flex flex-col md:flex-row justify-between items-center px-gutter py-lg max-w-container-max mx-auto w-full">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface mb-sm md:mb-0">Minimalist</div>
+<div class="flex flex-col md:flex-row items-center gap-md">
+<div class="flex gap-md">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">隱私政策</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">服務條款</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Minimalist. All rights reserved.</p>
+</div>
+</footer>
+<!-- Micro-interaction Script -->
+<script>
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            const gradientX = x * 20;
+            const gradientY = y * 20;
+            
+            document.body.style.backgroundPosition = `${gradientX}% ${gradientY}%`;
+        });
+    </script>
+</body></html>

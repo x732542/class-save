@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <button id="buttonA" onclick="apple()">按鈕A</button>
+    <button id="buttonB">按鈕B</button>
+    <button id="buttonC">按鈕C</button>
+    <script>
+      function apple() {
+        console.log("按鈕A-事件");
+      }
+
+      // document.getElementById("buttonB").onclick = function(){
+      //     alert("按鈕B-事件");
+      // }
+      buttonB.onclick = function () {
+        alert("按鈕C-事件");
+      };
+
+      document.getElementById("buttonC").addEventListener("click", function () {
+        alert("按鈕C-事件");
+      });
+    </script>
+  </body>
+</html>

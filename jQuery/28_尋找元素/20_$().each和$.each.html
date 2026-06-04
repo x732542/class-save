@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../_js/jquery-3.7.1.js"></script>
+  </head>
+
+  <body>
+    <h4>$().each()</h4>
+    <p>
+      <a href="https://api.jquery.com/each/">https://api.jquery.com/each/</a>
+    </p>
+
+    <h4>jQuery.each()</h4>
+    <p>
+      <a href="https://api.jquery.com/jquery.each/"
+        >https://api.jquery.com/jquery.each/</a
+      >
+    </p>
+
+    <h4>$ vs $()</h4>
+    <p>
+      <a
+        href="https://learn.jquery.com/using-jquery-core/dollar-object-vs-function/"
+        >https://learn.jquery.com/using-jquery-core/dollar-object-vs-function/</a
+      >
+    </p>
+    <hr />
+
+    <h3>apple</h3>
+    <h3>bee</h3>
+    <h3>cat</h3>
+
+    <script>
+      // 10. 畫面準備好以後才開始執行
+      $(function () {
+        // 20. $().each(): 逐項取得所有 h3 元素 裡面的文字
+        $("h3").each(function (rabbit, fish) {
+          //   console.log(rabbit); // index or 索引值
+          //   console.log(fish); // element or 元素
+          //方法一~方法八
+          //   //   方法一
+          //   console.log(fish.innerHTML); // JS
+          //   //   方法二
+          //   console.log(fish.innerText); // JS
+          //   //   方法三
+          //   console.log(this.innerHTML); // JS
+          //   //   方法四
+          //   console.log(this.innerText); // JS
+          //   //   方法五
+          //   console.log($(fish).text()); // JQ
+          //   //   方法六
+          //   console.log($(this).text()); // JQ
+          //   //   方法七
+          //   console.log($(fish).html()); // JQ
+
+          //   //   方法八
+          //   console.log($(this).html()); // JQ
+
+          $(this).html(`<i>${$(this).text()}</i>`);
+        });
+        // 21. 將所有 h3 元素的文字改為斜體
+
+        // 30. $.each(): 讀出陣列裡面的項目
+        var list = ["dog", "egg"];
+        $.each(list, function (index, value) {
+          console.log(value);
+        });
+      });
+    </script>
+  </body>
+</html>

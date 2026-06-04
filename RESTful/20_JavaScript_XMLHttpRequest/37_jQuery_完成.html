@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../_js/jquery-3.6.0.js"></script>
+  </head>
+  <body>
+    <h3>jQuery版本</h3>
+    <button id="btnGetOpenData">取得天氣資料</button>
+    <hr />
+    <select id="cityList"></select>
+    <hr />
+    <div id="divResult"></div>
+
+    <script>
+      let btnClick = function () {
+        let xhr = new XMLHttpRequest();
+        xhr.addEventListener("load", txtLoad);
+        // xhr.open("GET", "../_file/F-C0032-001.xml");
+        xhr.open("GET", "https://opendata.cwa.gov.tw/fileapi/v1/opendataapi/F-C0032-001?Authorization=rdec-key-123-45678-011121314&format=XML");
+        xhr.send();
+
+        // 0527討論過元素消失的三種方式
+        $("#btnGetOpenData").prop("disabled", true);
+      };
+      let selectChange = function () {
+        setWeather($("#cityList").val());
+      };
+      let addOptionElement = function (list) {
+        $.each(list, function (index, value) {
+          // //js
+          // console.log(value.innerHTML);
+
+          //  jQuery 28資料夾->20號檔案
+          // console.log($(value).text());
+          $("#cityList").append(
+            `<option value=${index}>${$(value).text()}</option>`,
+          );
+        });
+      };
+      let txtLoad = function () {
+        let parser = new DOMParser();
+        let xmlDocument = parser.parseFromString(this.responseText, "text/xml");
+        let locationList = xmlDocument.getElementsByTagName("locationName");
+        // console.log(locationList);
+        // 1. 參數
+        addOptionElement(locationList);
+        // 2. 全域
+        tempList = xmlDocument.querySelectorAll("locationName+weatherElement");
+      };
+      //                                            都可以用中括弧拿東西
+      let tempList; //NodeList(22)[...] -> 類陣列 ->[2]
+      let setWeather = function (cityIndex) {
+        let data = tempList[cityIndex]; //(使用者選到)縣市的天氣
+        $("#divResult").empty();
+        $(data)
+          .find("time")
+          .each(function (index, elem) {
+            // console.log(elem);// <time>本人
+            // 鍊式呼叫
+            let st = $(elem).find("startTime").text();
+            let et = $(elem).find("endTime").text();
+            let pn = $(elem).find("parameterName").text();
+            // js串字串
+            $("#divResult").append(`
+            <p>${st}</p>
+            <p>${et}</p>
+            <p>${pn}</p>
+            `);
+          });
+      };
+
+      $("#btnGetOpenData").on("click", btnClick);
+      $("#cityList").on("change", selectChange);
+    </script>
+  </body>
+</html>

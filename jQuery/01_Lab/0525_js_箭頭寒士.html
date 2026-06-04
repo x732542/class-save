@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //js宣告函式有兩種
+      function apple() {
+        console.log("test-apple");
+      }
+      let bee = function () {
+        console.log("test-bee");
+      };
+      //驗證真的有兩種宣告方式
+      apple();
+      bee();
+      // 箭頭函式
+      let cat = () => {
+        console.log("test-cat");
+      };
+      cat();
+
+      // 普通函式 ->  箭頭函式
+      // 1.如果只有一個參數 ->() 可以不寫
+      // 2.如果只做一件事情叫做回傳->{return}
+      //   let dog = function(fish) => {return fish+5; }
+      //   let dog =         (fish) => {return fish+5; }
+      //   let dog =         fish   => {return fish+5; }
+      //   let dog =         fish   =>         fish+5
+
+      let dog = (fish) => fish + 5
+
+      let result = dog(200);
+      console.log(result); //105
+
+      //
+    </script>
+  </body>
+</html>

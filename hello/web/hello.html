@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>SimpleSite - Hello</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#3c0800",
+                        "primary-fixed": "#dde1ff",
+                        "inverse-on-surface": "#edf0ff",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#ffb4a1",
+                        "background": "#f9f9ff",
+                        "surface-dim": "#d3daef",
+                        "on-background": "#141b2b",
+                        "surface-variant": "#dce2f7",
+                        "on-primary-fixed-variant": "#0038b6",
+                        "primary-fixed-dim": "#b7c4ff",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#dfe3ff",
+                        "secondary-fixed-dim": "#c0c7d3",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#404751",
+                        "surface-container": "#e9edff",
+                        "inverse-primary": "#b7c4ff",
+                        "secondary": "#585f6a",
+                        "surface": "#f9f9ff",
+                        "surface-container-low": "#f1f3ff",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#003ec7",
+                        "outline": "#737688",
+                        "inverse-surface": "#293040",
+                        "tertiary": "#952200",
+                        "on-surface": "#141b2b",
+                        "secondary-container": "#dce3f0",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffdbd2",
+                        "outline-variant": "#c3c5d9",
+                        "on-tertiary-container": "#ffddd5",
+                        "on-secondary-fixed": "#151c25",
+                        "on-secondary-container": "#5e6570",
+                        "secondary-fixed": "#dce3f0",
+                        "tertiary-container": "#bf3003",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#dce2f7",
+                        "surface-bright": "#f9f9ff",
+                        "surface-container-high": "#e1e8fd",
+                        "on-tertiary-fixed-variant": "#891e00",
+                        "on-primary-fixed": "#001452",
+                        "primary-container": "#0052ff",
+                        "surface-tint": "#004ced",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#434656"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "xs": "4px",
+                        "base": "8px",
+                        "lg": "48px",
+                        "md": "24px",
+                        "xl": "80px",
+                        "gutter": "24px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1;
+        }
+        .ambient-shadow {
+            box-shadow: 0 24px 32px -12px rgba(0, 62, 199, 0.06);
+        }
+        body {
+            background-color: #f9f9ff;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface border-b border-outline-variant">
+<nav class="flex justify-between items-center w-full px-md md:px-xl py-base max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">SimpleSite</div>
+<div class="hidden md:flex items-center space-x-md">
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors hover:bg-surface-container-low px-3 py-1 rounded-lg" href="#">Home</a>
+<a class="font-label-md text-label-md text-primary font-semibold border-b-2 border-primary pb-1" href="#">Hello</a>
+</div>
+<div class="flex items-center gap-sm">
+<button class="bg-primary text-on-primary px-md py-2 rounded-full font-label-md text-label-md hover:bg-primary-container active:scale-95 transition-all duration-200">
+                    Get Started
+                </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="pt-xl pb-xl min-h-[calc(100vh-140px)] flex flex-col items-center justify-center">
+<!-- Hero / Hello World Section -->
+<section class="max-w-container-max mx-auto px-md md:px-xl text-center w-full">
+<div class="relative inline-block mb-md">
+<div class="absolute -inset-4 bg-primary-fixed-dim opacity-20 blur-2xl rounded-full"></div>
+<h1 class="relative font-headline-xl text-[64px] md:text-[80px] leading-tight text-on-surface tracking-tighter">
+                    Hello, <span class="text-primary">World!</span>
+</h1>
+</div>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto mb-lg">
+                Welcome to a space defined by professional minimalism and calm productivity. We're glad you're here.
+            </p>
+<!-- Bento-style Interaction Grid -->
+
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-md md:px-xl py-md max-w-container-max mx-auto">
+<div class="flex flex-col items-center md:items-start mb-md md:mb-0">
+<div class="font-headline-md text-headline-md font-bold text-on-surface">SimpleSite</div>
+<p class="font-label-sm text-label-sm text-secondary">© 2024 SimpleSite. All rights reserved.</p>
+</div>
+<div class="flex space-x-md">
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for cards
+        document.querySelectorAll('.ambient-shadow').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.boxShadow = '0 32px 48px -16px rgba(0, 62, 199, 0.12)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.boxShadow = '0 24px 32px -12px rgba(0, 62, 199, 0.06)';
+            });
+        });
+
+        // Simple scroll effect for navbar
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 10) {
+                header.classList.add('ambient-shadow');
+            } else {
+                header.classList.remove('ambient-shadow');
+            }
+        });
+    </script>
+
+
+</body></html>

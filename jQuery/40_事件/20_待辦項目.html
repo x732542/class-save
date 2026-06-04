@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../_js/jquery-3.7.1.js"></script>
+  </head>
+
+  <body>
+    <h4>jQuery event.data</h4>
+    <p>
+      <a href="https://api.jquery.com/event.data/">https://api.jquery.com/event.data/</a>
+    </p>
+
+    <pre>
+      練習製作待辦事項清單
+      1. 使用者可以增加待辦事項
+      2. 使用者點選待辦事項文字表示該項目已完成 (添加刪除線)
+    </pre>
+
+    <input id="a" />
+    <button id="b">新增</button>
+
+    <h3>A（靜態綁定，不含新增）</h3>
+    <ul id="abb">
+      <li>a</li>
+      <li>b</li>
+    </ul>
+
+    <h3>B（事件委派，含新增）</h3>
+    <ul id="bba">
+      <li>a</li>
+      <li>b</li>
+    </ul>
+
+    <script>
+      // 現在存在的項目 不包含新增
+      $("#abb > li").on("click", function () {
+        $(this).css("text-decoration", "line-through");
+      });
+
+      // 現在存在 以及未來增加的
+      $("#bba").on("click", "li", function () {
+        $(this).css("text-decoration", "line-through");
+      });
+
+      $("#b").on("click", function () {
+        $("#abb, #bba").append(`<li>${$("#a").val()}</li>`);
+      });
+
+
+    //   $("body").append("<input id='a'></input>");
+    //   $("body").append("<button>in</button>");
+    //   $("body").append("<div></div>");
+    //   $("button").on("click", function () {
+    //     $("div").append("<p>" + $("input").val() + "</p>");
+    //   });
+    //   $("div").on("click", "p", function () {
+    //     $(this).css("text-decoration", "line-through");
+    //   });
+    </script>
+  </body>
+</html>

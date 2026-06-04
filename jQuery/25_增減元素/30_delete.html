@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/30_delete.css" />
+    <script src="../_js/jquery-3.7.1.js"></script>
+  </head>
+
+  <body>
+    <h4>Category: DOM Removal</h4>
+    <p>
+      <a href="https://api.jquery.com/category/manipulation/dom-removal/"
+        >https://api.jquery.com/category/manipulation/dom-removal/</a
+      >
+    </p>
+    <button id="ban">empty</button>
+    <button id="ana" onclick="ana()">remove</button>
+    <h1 id="banana">香蕉</h1>
+
+    <button id="bany">remove</button>
+    <button id="anay" onclick="anay()">detach</button>
+    <div style="background-color: black">
+      <button id="cc">CC</button>
+    </div>
+    <script>
+      // 10. 試著比較出 empty() 和 remove() 的差異
+      ban.onclick = function () {
+        $("#banana").empty();
+      };
+      function ana() {
+        $("#banana").remove();
+      }
+
+      bany.onclick = function () {
+        // 1.把bany按鈕存起來
+        let x = $("#cc");
+        // 2.把bany按鈕 remove
+        $("cc").detach();
+        // 3.把1存好的按鈕放到畫面上
+        $("div").append(x);
+      };
+
+      function anay() {
+        // 1.把anay按鈕存起來
+        let x = $("#cc");
+        // 2.把anay按鈕 remove
+        $("cc").remove();
+        // 3.把1存好的按鈕放到畫面上
+        $("div").append(x);
+      }
+
+      $("#cc").on("click", function () {
+        console.log("香蕉");
+      });
+      //   cc.onclick = function () {
+      //     $("#cc").detach();
+      //   };
+
+      // 20. 試著比較出 detach() 和 remove() 的差異
+      //      * jQuery 綁定事件的方法之一: $().on('事件名稱', function(){})
+    </script>
+  </body>
+</html>

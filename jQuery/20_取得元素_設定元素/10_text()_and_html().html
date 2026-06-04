@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../_js/jquery-3.7.1.js"></script>
+  </head>
+
+  <body>
+    <p id="demo">電腦</p>
+    <button id="btnLogin">登入</button>
+
+    <script>
+      btnLogin.onclick = function () {
+        // 10. 取得 p 元素的內容
+        let x = document.getElementById("demo").innerText;
+        console.log(x);
+
+        // 20. 設定 p 元素的內容
+        document.getElementById("demo").innerText = "鍵盤";
+
+        // 30. 比較 $().text() 和 $().html() 的差異
+        // text(): 取得開始標籤結束標籤中間的內容
+        // html(): 取得開始標籤結束標籤中間的內容(有HTML標籤也會獲得)
+        let y = $("#demo").text();
+        console.log(y);
+      };
+    </script>
+  </body>
+</html>
